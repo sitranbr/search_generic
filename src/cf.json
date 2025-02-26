@@ -1,0 +1,506 @@
+{
+    "content": [
+        {
+            "id": "title-1",
+            "title": "TÍTULO I - DOS PRINCÍPIOS FUNDAMENTAIS",
+            "content": [
+                {
+                    "type": "article",
+                    "number": 1,
+                    "text": "A República Federativa do Brasil, formada pela união indissolúvel dos Estados e Municípios e do Distrito Federal, constitui-se em Estado Democrático de Direito e tem como fundamentos:",
+                    "items": [
+                    {
+                        "item": "I.",
+                        "text": "a soberania;"
+                    },
+                    {
+                        "item": "II.",
+                        "text": "a cidadania;"
+                    },
+                    {
+                        "item": "III.",
+                        "text": "a dignidade da pessoa humana;"
+                    },
+                    {
+                        "item": "IV.",
+                        "text": "os valores sociais do trabalho e da livre iniciativa;"
+                    },
+                    {
+                        "item": "V.",
+                        "text": "o pluralismo político."
+                    }
+                    ],
+                    "paragraphs": [
+                    {
+                        "text": "Todo o poder emana do povo, que o exerce por meio de representantes eleitos ou diretamente, nos termos desta Constituição."
+                    }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "title-2",
+            "title": "TÍTULO II - Dos Direitos e Garantias Fundamentais",
+            "content": [
+                {
+                    "id": "chapter-1",
+                    "title": "Cap. I - Dos Direitos e Deveres Individuais e Coletivos",
+                    "content": [
+                    ]
+                }
+                
+            ]
+        },
+        {
+            "id": "title-3",
+            "title": "TÍTULO III - Da Organização do Estado",
+            "content": [
+                {
+                    "id": "chapter-1",
+                    "title": "Cap. I - Da Organização Político-Administrativa",
+                    "content": [
+                    ]
+                }
+                
+            ]
+        },
+        {
+            "id": "title-4",
+            "title": "TÍTULO IV - Da Organização dos Poderes",
+            "content": [
+                {
+                    "id": "chapter-1",
+                    "title": "Cap. I - Do Poder Legislativo",
+                    "content": [
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO I - Do Congresso Nacional",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO II - Das Atribuições do Congresso Nacional",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO III - Da Câmara dos Deputados",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO IV - Do Senado Federal",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO V - Dos Deputados e dos Senadores",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO VI - Das Reuniões",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO VII - Das Comissões",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO VIII - Do Processo Legislativo",
+                            "content": [
+                                {
+                                    "type": "subsection",
+                                    "title": "SUBSEÇÃO I - Disposição Geral",
+                                    "content": [
+                                    ]
+                                },
+                                {
+                                    "type": "subsection",
+                                    "title": "SUBSEÇÃO II - Da Emenda à Constituição",
+                                    "content": [
+                                    ]
+                                },
+                                {
+                                    "type": "subsection",
+                                    "title": "SUBSEÇÃO III - Das Leis",
+                                    "content": [
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO IX - Da Fiscalização Contábil, Financeira e Orçamentária",
+                            "content": [
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "chapter-2",
+                    "title": "Cap. II - Do Poder Executivo",
+                    "content": [
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO I - Do Presidente e do Vice-Presidente da República",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO II - Das Atribuições do Presidente da República",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO III - Da Responsabilidade do Presidente da República",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO IV - Dos Ministros de Estado",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO V - Do Conselho da República e do Conselho de Defesa Nacional",
+                            "content": [
+                                {
+                                    "type": "subsection",
+                                    "title": "SUBSEÇÃO I - Do Conselho da República",
+                                    "content": [
+                                    ]
+                                },
+                                {
+                                    "type": "subsection",
+                                    "title": "SUBSEÇÃO II - Do Conselho de Defesa Nacional",
+                                    "content": [
+                                    ]
+                                }
+                            ]
+                        }                       
+                    ]
+                },
+                {
+                    "id": "chapter-3",
+                    "title": "Cap. III - Do Poder Judiciário",
+                    "content": [
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO I - Disposições Gerais",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO II - Do Supremo Tribunal Federal",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO III - Do Superior Tribunal de Justiça",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO IV - Dos Tribunais Regionais Federais e dos Juízes Federais",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO V - Dos Tribunais e Juízes do Trabalho",
+                            "content": [
+                            
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO VI - Dos Tribunais e Juízes Eleitorais",
+                            "content": [
+                                
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO VII - Dos Tribunais e Juízes Militares",
+                            "content": [
+                                
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO VIII - Dos Tribunais e Juízes dos Estados",
+                            "content": [
+                                
+                            ]
+                        }                            
+                    ]
+                },
+                {
+                    "id": "chapter-4",
+                    "title": "Cap. IV - Das Funções Essenciais à Justiça",
+                    "content": [
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO I - Do Ministério Público",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO II - Da Advocacia Pública (EC no 19/98)",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO III - Da Advocacia (EC no 80/2014)",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO IV - Da Defensoria Pública (EC no 80/2014)",
+                            "content": [
+                            ]
+                        }                                                 
+                    ]
+                }
+                
+            ]
+        },
+        {
+            "id": "title-5",
+            "title": "TÍTULO V - Da Defesa do Estado e das Instituições Democráticas",
+            "content": [
+                {
+                    "id": "chapter-1",
+                    "title": "Cap. I - Do Estado de Defesa e do Estado de Sítio",
+                    "content": [
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO I - Do Estado de Defesa",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO II - Do Estado de Sítio",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO III - Disposições Gerais",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO IV - Do Senado Federal",
+                            "content": [
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "chapter-2",
+                    "title": "Cap. II - Das Forças Armadas",
+                    "content": [                     
+                    ]
+                },
+                {
+                    "id": "chapter-3",
+                    "title": "Cap. III - Da Segurança Pública",
+                    "content": [                         
+                    ]
+                }
+                
+            ]
+        },
+        {
+            "id": "title-6",
+            "title": "TÍTULO VI - Da Tributação e do Orçamento",
+            "content": [
+                {
+                    "id": "chapter-1",
+                    "title": "Cap. I - Do Sistema Tributário Nacional",
+                    "content": [
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO I - Dos Princípios Gerais",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO II - Das Limitações do Poder de Tributar",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO III - Dos Impostos da União",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO IV - Dos Impostos dos Estados e do Distrito Federal",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO V - Dos Impostos dos Municípios",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO VI - Da Repartição das Receitas Tributárias",
+                            "content": [
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "chapter-2",
+                    "title": "Cap. II - Das Finanças Públicas",
+                    "content": [   
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO I - Normas Gerais",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO I - Dos Orçamentos",
+                            "content": [
+                            ]
+                        }                  
+                    ]
+                }  
+            ]
+        },
+        {
+            "id": "title-7",
+            "title": "TÍTULO VII - Da Ordem Econômica e Financeira",
+            "content": [
+                {
+                    "id": "chapter-1",
+                    "title": "Cap. I - Dos Princípios Gerais da Atividade Econômica",
+                    "content": [
+                    ]
+                },
+                {
+                    "id": "chapter-2",
+                    "title": "Cap. II - Da Política Urbana",
+                    "content": [                    
+                    ]
+                },
+                {
+                    "id": "chapter-3",
+                    "title": "Cap. III - Da Política Agrícola e Fundiária e da Reforma Agrária",
+                    "content": [                    
+                    ]
+                },
+                {
+                    "id": "chapter-4",
+                    "title": "Cap. IV - Do Sistema Financeiro Nacional",
+                    "content": [                    
+                    ]
+                }     
+            ]
+        },
+        {
+            "id": "title-8",
+            "title": "TÍTULO VIII - Da Ordem Social",
+            "content": [
+                {
+                    "id": "chapter-1",
+                    "title": "Cap. I - Disposição Geral",
+                    "content": [
+                    ]
+                },
+                {
+                    "id": "chapter-2",
+                    "title": "Cap. II - Da Seguridade Social",
+                    "content": [   
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO I - Disposições Gerais",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO II - Da Saúde",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO III - Da Previdência Social",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO IV - Da Assistência Social",
+                            "content": [
+                            ]
+                        }              
+                    ]
+                },
+                {
+                    "id": "chapter-3",
+                    "title": "Cap. III - Da Educação, da Cultura e do Desporto",
+                    "content": [   
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO I - Da Educação",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO II - Da Cultura",
+                            "content": [
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "title": "SEÇÃO III - Do Desporto",
+                            "content": [
+                            ]
+                        }                    
+                    ]
+                },
+                {
+                    "id": "chapter-4",
+                    "title": "Cap. IV - Da Ciência, Tecnologia e Inovação (EC no 85/2015)",
+                    "content": [                    
+                    ]
+                }     
+            ]
+        }
+    ]
+}

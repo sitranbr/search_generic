@@ -1,0 +1,22 @@
+{
+  "name": "search-api",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon start.js",
+    "start": "pm2 start processes.json",
+    "stop": "pm2 delete processes.json"
+  },
+  "author": "Sandro A Costa",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "search-api": "file:"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
