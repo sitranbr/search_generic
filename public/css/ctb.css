@@ -9,6 +9,43 @@ body {
     font-size: 16px;
 }
 
+/* ctb.css */
+.title-header {
+    padding: 10px;
+    font-size: 1em;
+    color: #343a40;
+    cursor: pointer;
+}
+
+.chapter-header {
+    padding: 8px;
+    font-size: 1.1em;
+    color: #495057;
+    cursor: pointer;
+}
+
+.subsection-header {
+    padding: 6px;
+    font-size: 0.95em;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+/* Ajustes para collapsible */
+.title-header.collapsible,
+.chapter-header.collapsible,
+.section-header.collapsible,
+.subsection-header.collapsible {
+    user-select: none;
+}
+
+.title-header.open,
+.chapter-header.open,
+.section-header.open,
+.subsection-header.open {
+    border-left: 4px solid #FF9800;
+}
+
 .section {
     margin-bottom: 2px;
 }

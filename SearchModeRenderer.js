@@ -24,13 +24,23 @@ class SearchModeRenderer {
         return contentHtml;
     }
 
+    static renderFilteredArticleContent(article, query) {
+        let contentHtml = `<p><strong>Art. ${article.number || ''}</strong> ${Utils.highlightText(article.text || '', query)}</p>`;
+        if (Utils.matchesText(article.text, query)) {
+            contentHtml += this.renderFullContent(article, query); // Mostra tudo se o texto principal corresponde
+        } else {
+            contentHtml += this.renderFilteredContent(article, query); // Filtra apenas nós relevantes
+        }
+        return contentHtml;
+    }
+
     static renderFilteredContent(article, query) {
         let contentHtml = '';
         if (article.items && Array.isArray(article.items)) {
             contentHtml += this.renderFilteredItems(article.items, query);
         }
         if (article.paragraphs && Array.isArray(article.paragraphs)) {
-            contentHtml += this.renderParagraphs(article.paragraphs, query, false);
+            contentHtml += this.renderFilteredParagraphs(article.paragraphs, query);
         }
         if (article.observations && Array.isArray(article.observations)) {
             contentHtml += this.renderFilteredObservations(article.observations, query);
@@ -49,8 +59,33 @@ class SearchModeRenderer {
     static renderFilteredItems(items, query) {
         let html = '';
         items.forEach(item => {
-            if (Utils.itemMatches(item, query)) {
-                html += Utils.renderItemSearch(item, query, true);
+            if (Utils.matchesText(item.text, query)) {
+                // Se o termo está no texto do item, mostra todos os filhos
+                html += Utils.renderItemSearch(item, query, false); // Não filtra subitens/opções
+            } else if (item.subitems && Array.isArray(item.subitems)) {
+                // Verifica subitens
+                item.subitems.forEach(subitem => {
+                    if (Utils.matchesText(subitem.text, query)) {
+                        // Se o termo está no subitem, mostra todos os seus filhos
+                        html += Utils.renderItemSearch({ item: item.item, text: item.text, subitems: [subitem] }, query, false);
+                    } else if (subitem.options && Array.isArray(subitem.options)) {
+                        // Filtra apenas opções relevantes
+                        const relevantOptions = subitem.options.filter(option => Utils.matchesText(option.text, query));
+                        if (relevantOptions.length > 0) {
+                            html += Utils.renderItemSearch({ item: item.item, text: item.text, subitems: [{ letter: subitem.letter, text: subitem.text, options: relevantOptions }] }, query, false);
+                        }
+                    } else if (subitem.note && Array.isArray(subitem.note)) {
+                        const relevantNotes = subitem.note.filter(note => Utils.matchesText(note.text, query));
+                        if (relevantNotes.length > 0) {
+                            html += Utils.renderItemSearch({ item: item.item, text: item.text, subitems: [{ letter: subitem.letter, text: subitem.text, note: relevantNotes }] }, query, false);
+                        }
+                    }
+                });
+            } else if (item.note && Array.isArray(item.note)) {
+                const relevantNotes = item.note.filter(note => Utils.matchesText(note.text, query));
+                if (relevantNotes.length > 0) {
+                    html += Utils.renderItemSearch({ item: item.item, text: item.text, note: relevantNotes }, query, false);
+                }
             }
         });
         return html;
@@ -72,6 +107,39 @@ class SearchModeRenderer {
             }
             if (paragraphContent) {
                 html += paragraphContent;
+            }
+        });
+        return html;
+    }
+
+    static renderFilteredParagraphs(paragraphs, query) {
+        let html = '';
+        paragraphs.forEach(paragraph => {
+            if (Utils.matchesText(paragraph.text, query)) {
+                // Se o termo está no texto do parágrafo, mostra todos os filhos
+                const parNum = paragraph.number || 'Parágrafo único.';
+                html += `<p class="paragraph"><strong>${parNum}</strong> ${Utils.highlightText(paragraph.text || '', query)}</p>`;
+                if (paragraph.items && Array.isArray(paragraph.items)) {
+                    html += this.renderItems(paragraph.items, query); // Mostra todos os itens
+                }
+                if (paragraph.note && Array.isArray(paragraph.note)) {
+                    html += this.renderNotes(paragraph.note, query); // Mostra todas as notas
+                }
+            } else if (paragraph.items && Array.isArray(paragraph.items)) {
+                // Filtra itens dentro do parágrafo
+                const filteredItems = this.renderFilteredItems(paragraph.items, query);
+                if (filteredItems) {
+                    const parNum = paragraph.number || 'Parágrafo único.';
+                    html += `<p class="paragraph"><strong>${parNum}</strong> ${Utils.highlightText(paragraph.text || '', query)}</p>`;
+                    html += filteredItems;
+                }
+            } else if (paragraph.note && Array.isArray(paragraph.note)) {
+                const relevantNotes = paragraph.note.filter(note => Utils.matchesText(note.text, query));
+                if (relevantNotes.length > 0) {
+                    const parNum = paragraph.number || 'Parágrafo único.';
+                    html += `<p class="paragraph"><strong>${parNum}</strong> ${Utils.highlightText(paragraph.text || '', query)}</p>`;
+                    html += this.renderNotes(relevantNotes, query);
+                }
             }
         });
         return html;

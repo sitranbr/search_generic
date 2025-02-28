@@ -12,7 +12,7 @@
     <div class="search-box">
         
         <div class="input-container">
-            <form action="/search" method="get" id="searchForm">
+          <form action="/<%= route %>/search" method="get" id="searchForm">
                 <input type="text" name="q" id="searchInput" placeholder="Digite sua busca" value="<%= typeof query !== 'undefined' ? query : '' %>">
                 <button class="search-btn" id="search-btn"><i class="fas fa-search"></i></button>
                 <button class="clear-btn" id="clearSearchButton"><i class="fas fa-times"></i></button>

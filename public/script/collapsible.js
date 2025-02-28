@@ -13,15 +13,16 @@ document.addEventListener('DOMContentLoaded', function() {
           const contentElement = document.getElementById('content');
           const clearSearchButton = document.getElementById('clearSearchButton');
           const searchBtn = document.getElementById('search-btn');
-
+          const route = window.location.pathname.split('/')[1] || 'ctb'; // Extrai 'ctb' ou 'cf' da URL
+         
           if (searchInput && contentElement && clearSearchButton && searchBtn) {
               const query = searchInput.value.trim();
               console.log('Pesquisando:', query);
 
               clearSearchButton.classList.toggle('show', query !== '');
               searchBtn.style.display = query !== '' ? 'none' : 'block';
-
-              const fetchUrl = query ? `/search?q=${encodeURIComponent(query)}` : '/search';
+              const fetchUrl = query ? `/${route}/search?q=${encodeURIComponent(query)}` : `/${route}/search`;
+              console.log('fetchUrl:', fetchUrl);
               fetch(fetchUrl, {
                   headers: {
                       'X-Requested-With': 'XMLHttpRequest'
@@ -66,8 +67,9 @@ document.addEventListener('DOMContentLoaded', function() {
           const query = expandLink.getAttribute('data-query');
           const expand = expandLink.getAttribute('data-expand');
           const articleWrapper = expandLink.closest('.article-wrapper');
+          const route = window.location.pathname.split('/')[1] || 'ctb';
 
-          fetch(`/search?q=${query}&expand=${expand}`, {
+          fetch(`/${route}/search?q=${query}&expand=${expand}`, {
               headers: {
                   'X-Requested-With': 'XMLHttpRequest'
               }
@@ -92,12 +94,13 @@ document.addEventListener('DOMContentLoaded', function() {
           e.preventDefault();
           const searchInput = document.getElementById('searchInput');
           const contentElement = document.getElementById('content');
+          const route = window.location.pathname.split('/')[1] || 'ctb';
           if (searchInput && contentElement) {
               searchInput.value = '';
               clearSearchButton.classList.remove('show');
               document.getElementById('search-btn').style.display = 'block';
 
-              fetch('/search', {
+              fetch(`/${route}/search`, {
                   headers: {
                       'X-Requested-With': 'XMLHttpRequest'
                   }

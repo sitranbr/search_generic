@@ -9,52 +9,118 @@ class ContentRenderer {
         let html = '';
         const containsQuery = Utils.matchesText;
 
-        data.content.forEach(chapter => {
-            const chapterMatches =
-                containsQuery(chapter.title, query) ||
-                containsQuery(chapter.description, query) ||
-                (Array.isArray(chapter.content) &&
-                    chapter.content.some(item => 
-                        Utils.itemMatches(item, query) || 
-                        (item.type === 'article' && Utils.matchArticle(item, query))
-                    ));
-
-            if (chapterMatches) {
-                html += `<p class="article-chapter"><strong>${Utils.highlightText(chapter.title, query)}</strong></p>`;
-                if (Array.isArray(chapter.content)) {
-                    chapter.content.forEach(item => {
+        data.content.forEach(topLevel => {
+            const topLevelMatches = this.levelMatches(topLevel, query);
+            if (topLevelMatches) {
+                const headerClass = topLevel.id && topLevel.id.startsWith('chapter') ? 'article-chapter' : 'title-header';
+                html += `<p class="${headerClass}"><strong>${Utils.highlightText(topLevel.title || '', query)}</strong></p>`;
+                if (topLevel.description && containsQuery(topLevel.description, query)) {
+                    html += `<p class="observation">${Utils.highlightText(topLevel.description, query)}</p>`;
+                }
+                if (Array.isArray(topLevel.content)) {
+                    topLevel.content.forEach(item => {
                         if (item.type === 'section') {
-                            const sectionMatches =
-                                containsQuery(item.title, query) ||
-                                containsQuery(item.description, query) ||
-                                (Array.isArray(item.content) &&
-                                    item.content.some(sub => 
-                                        Utils.itemMatches(sub, query) || 
-                                        (sub.type === 'article' && Utils.matchArticle(sub, query))
-                                    ));
+                            const sectionMatches = this.levelMatches(item, query);
                             if (sectionMatches) {
-                                html += `<h3 class="section-header">${Utils.highlightText(item.title, query)}</h3>`;
-                                html += `<div class="content" style="display: block;">`;
-                                if (item.description) {
+                                html += `<h3 class="section-header">${Utils.highlightText(item.title || '', query)}</h3>`;
+                                if (item.description && containsQuery(item.description, query)) {
                                     html += `<p class="title-definition">${Utils.highlightText(item.description, query)}</p>`;
                                 }
                                 if (Array.isArray(item.content)) {
                                     item.content.forEach(subitem => {
-                                        if (subitem.type === 'article' && (Utils.itemMatches(subitem, query) || Utils.matchArticle(subitem, query))) {
-                                            html += this.renderArticleSearch(subitem, query, data, false);
-                                        } else if (subitem.type === 'anexo') {
+                                        if (subitem.type === 'article') {
+                                            const matchByAbbreviation = Utils.matchArticle(subitem, query);
+                                            const matchByContent = Utils.itemMatches(subitem, query);
+                                            if (matchByAbbreviation || matchByContent) {
+                                                // Se for por abreviação, não filtra filhos; se for por conteúdo, filtra
+                                                html += this.renderArticleSearch(subitem, query, data, false, !matchByAbbreviation);
+                                            }
+                                        } else if (subitem.type === 'anexo' && Utils.itemMatches(subitem, query)) {
                                             html += NormalModeRenderer.renderAnexo(subitem);
-                                        } else if (subitem.type === 'section') {
-                                            html += NormalModeRenderer.renderSection(subitem, true);
+                                        } else if (subitem.type === 'subsection') {
+                                            const subsectionMatches = this.levelMatches(subitem, query);
+                                            if (subsectionMatches) {
+                                                html += `<h4 class="subsection-header">${Utils.highlightText(subitem.title || '', query)}</h4>`;
+                                                if (Array.isArray(subitem.content)) {
+                                                    subitem.content.forEach(article => {
+                                                        if (article.type === 'article') {
+                                                            const matchByAbbreviation = Utils.matchArticle(article, query);
+                                                            const matchByContent = Utils.itemMatches(article, query);
+                                                            if (matchByAbbreviation || matchByContent) {
+                                                                html += this.renderArticleSearch(article, query, data, false, !matchByAbbreviation);
+                                                            }
+                                                        }
+                                                    });
+                                                }
+                                            }
                                         }
                                     });
                                 }
-                                html += `</div>`;
                             }
-                        } else if (item.type === 'article' && (Utils.itemMatches(item, query) || Utils.matchArticle(item, query))) {
-                            html += this.renderArticleSearch(item, query, data, false);
+                        } else if (item.type === 'article') {
+                            const matchByAbbreviation = Utils.matchArticle(item, query);
+                            const matchByContent = Utils.itemMatches(item, query);
+                            if (matchByAbbreviation || matchByContent) {
+                                html += this.renderArticleSearch(item, query, data, false, !matchByAbbreviation);
+                            }
                         } else if (item.type === 'anexo' && Utils.itemMatches(item, query)) {
                             html += NormalModeRenderer.renderAnexo(item);
+                        } else if (item.id && item.title) { // Capítulo na CF
+                            const chapterMatches = this.levelMatches(item, query);
+                            if (chapterMatches) {
+                                html += `<p class="article-chapter"><strong>${Utils.highlightText(item.title || '', query)}</strong></p>`;
+                                if (item.description && containsQuery(item.description, query)) {
+                                    html += `<p class="observation">${Utils.highlightText(item.description, query)}</p>`;
+                                }
+                                if (Array.isArray(item.content)) {
+                                    item.content.forEach(subitem => {
+                                        if (subitem.type === 'section') {
+                                            const sectionMatches = this.levelMatches(subitem, query);
+                                            if (sectionMatches) {
+                                                html += `<h3 class="section-header">${Utils.highlightText(subitem.title || '', query)}</h3>`;
+                                                if (subitem.description && containsQuery(subitem.description, query)) {
+                                                    html += `<p class="title-definition">${Utils.highlightText(subitem.description, query)}</p>`;
+                                                }
+                                                if (Array.isArray(subitem.content)) {
+                                                    subitem.content.forEach(nestedItem => {
+                                                        if (nestedItem.type === 'subsection') {
+                                                            const subsectionMatches = this.levelMatches(nestedItem, query);
+                                                            if (subsectionMatches) {
+                                                                html += `<h4 class="subsection-header">${Utils.highlightText(nestedItem.title || '', query)}</h4>`;
+                                                                if (Array.isArray(nestedItem.content)) {
+                                                                    nestedItem.content.forEach(article => {
+                                                                        if (article.type === 'article') {
+                                                                            const matchByAbbreviation = Utils.matchArticle(article, query);
+                                                                            const matchByContent = Utils.itemMatches(article, query);
+                                                                            if (matchByAbbreviation || matchByContent) {
+                                                                                html += this.renderArticleSearch(article, query, data, false, !matchByAbbreviation);
+                                                                            }
+                                                                        }
+                                                                    });
+                                                                }
+                                                            }
+                                                        } else if (nestedItem.type === 'article') {
+                                                            const matchByAbbreviation = Utils.matchArticle(nestedItem, query);
+                                                            const matchByContent = Utils.itemMatches(nestedItem, query);
+                                                            if (matchByAbbreviation || matchByContent) {
+                                                                html += this.renderArticleSearch(nestedItem, query, data, false, !matchByAbbreviation);
+                                                            }
+                                                        }
+                                                    });
+                                                }
+                                            }
+                                        } else if (subitem.type === 'article') {
+                                            const matchByAbbreviation = Utils.matchArticle(subitem, query);
+                                            const matchByContent = Utils.itemMatches(subitem, query);
+                                            if (matchByAbbreviation || matchByContent) {
+                                                html += this.renderArticleSearch(subitem, query, data, false, !matchByAbbreviation);
+                                            }
+                                        } else if (subitem.type === 'anexo' && Utils.itemMatches(subitem, query)) {
+                                            html += NormalModeRenderer.renderAnexo(subitem);
+                                        }
+                                    });
+                                }
+                            }
                         }
                     });
                 }
@@ -63,13 +129,29 @@ class ContentRenderer {
         return html;
     }
 
-    static renderArticleSearch(article, query, data, expandAll = false) {
+    static levelMatches(item, query) {
+        const containsQuery = Utils.matchesText;
+        return (
+            containsQuery(item.title, query) ||
+            (item.description && containsQuery(item.description, query)) ||
+            (Array.isArray(item.content) &&
+                item.content.some(sub => 
+                    Utils.itemMatches(sub, query) || 
+                    (sub.type === 'article' && Utils.matchArticle(sub, query)) ||
+                    ((sub.type === 'section' || sub.type === 'subsection' || (sub.id && sub.title)) && this.levelMatches(sub, query))
+                ))
+        );
+    }
+
+    static renderArticleSearch(article, query, data, expandAll = false, filterChildren = false) {
         const artNum = article.number || '';
         const artText = article.text || '';
         const fullMatch = Utils.matchesText(artText, query) || Utils.matchArticle(article, query);
 
         let html = '';
-        let contentHtml = SearchModeRenderer.renderArticleContent(article, query, fullMatch, expandAll);
+        let contentHtml = filterChildren
+            ? SearchModeRenderer.renderFilteredArticleContent(article, query) // Filtra apenas nós relevantes
+            : SearchModeRenderer.renderArticleContent(article, query, fullMatch, expandAll); // Exibe tudo
         const isPartial = !fullMatch && !expandAll && SearchModeRenderer.hasMoreContent(article, query);
 
         if (contentHtml) {

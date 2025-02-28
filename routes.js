@@ -5,25 +5,46 @@ const JSONDataLoader = require('./JSONDataLoader');
 const NormalModeRenderer = require('./NormalModeRenderer');
 const searchHandler = require('./search.js');
 
-router.get('/', async (req, res) => {
+router.get('/ctb', async (req, res) => {
     try {
         const data = await JSONDataLoader.load('./src/data.json');
-        const query = req.query.q ? req.query.q.trim() : ''; // Trim para remover espaços em branco
-
+        const query = req.query.q ? req.query.q.trim() : '';
         let renderedContent;
-        if (!query) { // Se query é null, undefined ou string vazia após trim
-            renderedContent = NormalModeRenderer.display(data, false); // Modo normal, sem expansão
+
+        if (!query) {
+            renderedContent = NormalModeRenderer.display(data, false);
         } else {
-            renderedContent = await searchHandler.handleSearchAjax(req, data); // Modo pesquisa
+            renderedContent = await searchHandler.handleSearchAjax(req, data);
         }
 
-        res.render('index', { renderedContent, query });
+        res.render('index', { renderedContent, query, route: 'ctb' });
     } catch (error) {
-        console.error("Erro ao carregar os dados:", error);
+        console.error("Erro ao carregar os dados do CTB:", error.stack);
         res.status(500).send("Erro ao carregar os dados.");
     }
 });
 
-router.get('/search', searchHandler.handleSearch);
+router.get('/ctb/search', searchHandler.handleSearch);
+
+router.get('/cf', async (req, res) => {
+    try {
+        const data = await JSONDataLoader.load('./src/cf.json');
+        const query = req.query.q ? req.query.q.trim() : '';
+        let renderedContent;
+
+        if (!query) {
+            renderedContent = NormalModeRenderer.display(data, false);
+        } else {
+            renderedContent = await searchHandler.handleSearchAjax(req, data);
+        }
+
+        res.render('index', { renderedContent, query, route: 'cf' });
+    } catch (error) {
+        console.error("Erro ao carregar os dados da CF:", error.stack);
+        res.status(500).send("Erro ao carregar os dados.");
+    }
+});
+
+router.get('/cf/search', searchHandler.handleSearch);
 
 module.exports = router;

@@ -2,57 +2,39 @@
 class NormalModeRenderer {
     static display(data, expandAll = false) {
         let html = '';
-        data.content.forEach(chapter => {
-            const chapterId = chapter.id || '';
-            const chapterTitle = chapter.title || '';
-            html += `<div class="section" id="${chapterId}">`;
-            html += `<h4 class="section-header collapsible${expandAll ? ' active open' : ''}">`;
-            html += `<span class="icon">${expandAll ? '−' : '+'}</span>${chapterTitle}</h4>`;
-            html += `<div class="content" style="display: ${expandAll ? 'block' : 'none'};">`;
-            if (chapter.description) {
-                html += `<p class="observation">${chapter.description}</p>`;
-            }
-            if (Array.isArray(chapter.content)) {
-                chapter.content.forEach(item => {
-                    if (item.type === 'section') {
-                        html += this.renderSection(item, expandAll);
-                    } else if (item.type === 'article') {
-                        html += this.renderArticle(item, expandAll);
-                    } else if (item.type === 'anexo') {
-                        html += this.renderAnexo(item);
-                    } else {
-                        html += this.renderArticle(item, expandAll);
-                    }
-                });
-            }
-            html += `</div></div>`;
+        data.content.forEach(topLevel => {
+            html += this.renderLevel(topLevel, 'title-header', 'h2', expandAll);
         });
         return html;
     }
 
-    static renderSection(section, expandAll = false) {
+    static renderLevel(item, headerClass, headerTag, expandAll = false) {
         let html = '';
-        const sectionTitle = section.title || '';
-        html += `<h3 class="section-header collapsible${expandAll ? ' active open' : ''}">`;
-        html += `<span class="icon">${expandAll ? '−' : '+'}</span>${sectionTitle}</h3>`;
+        const itemTitle = item.title || '';
+        const itemId = item.id || '';
+        html += `<div class="${headerClass.split('-')[0]}" id="${itemId}">`;
+        html += `<${headerTag} class="${headerClass} collapsible${expandAll ? ' active open' : ''}">`;
+        html += `<span class="icon">${expandAll ? '−' : '+'}</span>${itemTitle}</${headerTag}>`;
         html += `<div class="content" style="display: ${expandAll ? 'block' : 'none'};">`;
-        if (section.description) {
-            html += `<p class="observation">${section.description}</p>`;
+        if (item.description) {
+            html += `<p class="observation">${item.description}</p>`;
         }
-        if (Array.isArray(section.content)) {
-            section.content.forEach(item => {
-                if (item.type === 'article') {
-                    html += this.renderArticle(item, expandAll);
-                } else if (item.type === 'anexo') {
-                    html += this.renderAnexo(item);
-                } else if (item.type === 'section') {
-                    html += this.renderSection(item, expandAll);
-                } else {
-                    html += this.renderArticle(item, expandAll);
+        if (Array.isArray(item.content)) {
+            item.content.forEach(subItem => {
+                if (subItem.id && subItem.title) { // Capítulo ou nível superior
+                    html += this.renderLevel(subItem, 'chapter-header', 'h3', expandAll);
+                } else if (subItem.type === 'section') {
+                    html += this.renderLevel(subItem, 'section-header', 'h4', expandAll);
+                } else if (subItem.type === 'subsection') {
+                    html += this.renderLevel(subItem, 'subsection-header', 'h5', expandAll);
+                } else if (subItem.type === 'article') {
+                    html += this.renderArticle(subItem, expandAll);
+                } else if (subItem.type === 'anexo') {
+                    html += this.renderAnexo(subItem);
                 }
             });
         }
-        html += `</div>`;
+        html += `</div></div>`;
         return html;
     }
 
@@ -160,18 +142,10 @@ class NormalModeRenderer {
 
     static renderDetails(details) {
         let html = `<div class="article-details">`;
-        if (details.infracao) {
-            html += `<strong>Infração:</strong> ${details.infracao}<br>`;
-        }
-        if (details.penalidade) {
-            html += `<strong>Penalidade:</strong> ${details.penalidade}<br>`;
-        }
-        if (details.medida_administrativa) {
-            html += `<strong>Medida Administrativa:</strong> ${details.medida_administrativa}<br>`;
-        }
-        if (details.infrator) {
-            html += `<strong>Infrator:</strong> ${details.infrator}`;
-        }
+        if (details.infracao) html += `<strong>Infração:</strong> ${details.infracao}<br>`;
+        if (details.penalidade) html += `<strong>Penalidade:</strong> ${details.penalidade}<br>`;
+        if (details.medida_administrativa) html += `<strong>Medida Administrativa:</strong> ${details.medida_administrativa}<br>`;
+        if (details.infrator) html += `<strong>Infrator:</strong> ${details.infrator}`;
         html += `</div>`;
         return html;
     }

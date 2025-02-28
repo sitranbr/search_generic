@@ -6,32 +6,43 @@ const SearchHandler = require('./searchHandler');
 
 async function handleSearch(req, res) {
     try {
-        const data = await JSONDataLoader.load('./src/data.json');
+        console.log('Iniciando handleSearch com req.query:', req.query);
+        const route = req.path.split('/')[1] || 'ctb'; // Captura 'ctb' ou 'cf' do path
+        const jsonPath = route === 'ctb' ? './src/data.json' : './src/cf.json';
+        const data = await JSONDataLoader.load(jsonPath);
+        console.log('Dados carregados com sucesso, tamanho:', data.content.length);
+
         const query = req.query.q ? req.query.q.trim() : '';
         const expand = req.query.expand;
+        console.log('Route:', route, 'Query:', query, 'Expand:', expand);
 
         if (req.headers['x-requested-with'] === 'XMLHttpRequest') {
-            // Requisição AJAX
+            console.log('Requisição AJAX detectada');
             let renderedContent;
             if (!query) {
-                renderedContent = NormalModeRenderer.display(data, false); // Modo normal para query vazia
+                console.log('Query vazia, renderizando modo normal');
+                renderedContent = NormalModeRenderer.display(data, false);
             } else if (expand) {
+                console.log('Expandindo artigo:', expand);
                 const fullArticle = SearchHandler.getFullArticleByNumber(expand, data);
                 renderedContent = fullArticle 
                     ? ContentRenderer.renderArticleSearch(fullArticle, query, data, true) 
                     : '<p>Artigo não encontrado.</p>';
             } else {
+                console.log('Renderizando resultados da busca para:', query);
                 renderedContent = ContentRenderer.renderSearchResults(data, query);
+                console.log('Renderização concluída, tamanho do HTML:', renderedContent.length);
             }
+            console.log('Enviando resposta AJAX');
             res.send(renderedContent);
         } else {
-            // Renderização para /search?q=query
+            console.log('Requisição normal, renderizando index');
             const renderedContent = query ? ContentRenderer.renderSearchResults(data, query) : NormalModeRenderer.display(data, false);
-            res.render('index', { renderedContent, query });
+            res.render('index', { renderedContent, query, route });
         }
     } catch (error) {
-        console.error("Erro ao realizar a pesquisa:", error);
-        res.status(500).send("Erro ao realizar a pesquisa.");
+        console.error('Erro detalhado ao realizar a pesquisa:', error.stack);
+        res.status(500).send('Erro ao realizar a pesquisa: ' + error.message);
     }
 }
 
@@ -39,7 +50,7 @@ async function handleSearchAjax(req, data) {
     const query = req.query.q ? req.query.q.trim() : '';
     const expand = req.query.expand;
     if (!query) {
-        return NormalModeRenderer.display(data, false); // Modo normal para query vazia
+        return NormalModeRenderer.display(data, false);
     } else if (expand) {
         const fullArticle = SearchHandler.getFullArticleByNumber(expand, data);
         return fullArticle ? ContentRenderer.renderArticleSearch(fullArticle, query, data, true) : '<p>Artigo não encontrado.</p>';
@@ -48,5 +59,3 @@ async function handleSearchAjax(req, data) {
 }
 
 module.exports = { handleSearch, handleSearchAjax };
-
-//stable
