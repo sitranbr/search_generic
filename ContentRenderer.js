@@ -12,7 +12,7 @@ class ContentRenderer {
         data.content.forEach(topLevel => {
             const topLevelMatches = this.levelMatches(topLevel, query);
             if (topLevelMatches) {
-                const headerClass = topLevel.id && topLevel.id.startsWith('chapter') ? 'article-chapter' : 'title-header';
+                const headerClass = topLevel.id && topLevel.id.startsWith('parte') ? 'title-header' : 'article-chapter';
                 html += `<p class="${headerClass}"><strong>${Utils.highlightText(topLevel.title || '', query)}</strong></p>`;
                 if (topLevel.description && containsQuery(topLevel.description, query)) {
                     html += `<p class="observation">${Utils.highlightText(topLevel.description, query)}</p>`;
@@ -32,7 +32,6 @@ class ContentRenderer {
                                             const matchByAbbreviation = Utils.matchArticle(subitem, query);
                                             const matchByContent = Utils.itemMatches(subitem, query);
                                             if (matchByAbbreviation || matchByContent) {
-                                                // Se for por abreviação, não filtra filhos; se for por conteúdo, filtra
                                                 html += this.renderArticleSearch(subitem, query, data, false, !matchByAbbreviation);
                                             }
                                         } else if (subitem.type === 'anexo' && Utils.itemMatches(subitem, query)) {
@@ -65,10 +64,11 @@ class ContentRenderer {
                             }
                         } else if (item.type === 'anexo' && Utils.itemMatches(item, query)) {
                             html += NormalModeRenderer.renderAnexo(item);
-                        } else if (item.id && item.title) { // Capítulo na CF
-                            const chapterMatches = this.levelMatches(item, query);
-                            if (chapterMatches) {
-                                html += `<p class="article-chapter"><strong>${Utils.highlightText(item.title || '', query)}</strong></p>`;
+                        } else if (item.id && item.title) { // Livro ou Título no CCB
+                            const subLevelMatches = this.levelMatches(item, query);
+                            if (subLevelMatches) {
+                                const subHeaderClass = item.id.startsWith('livro') ? 'book-header' : 'chapter-header';
+                                html += `<p class="${subHeaderClass}"><strong>${Utils.highlightText(item.title || '', query)}</strong></p>`;
                                 if (item.description && containsQuery(item.description, query)) {
                                     html += `<p class="observation">${Utils.highlightText(item.description, query)}</p>`;
                                 }
@@ -87,6 +87,44 @@ class ContentRenderer {
                                                             const subsectionMatches = this.levelMatches(nestedItem, query);
                                                             if (subsectionMatches) {
                                                                 html += `<h4 class="subsection-header">${Utils.highlightText(nestedItem.title || '', query)}</h4>`;
+                                                                if (Array.isArray(nestedItem.content)) {
+                                                                    nestedItem.content.forEach(article => {
+                                                                        if (article.type === 'article') {
+                                                                            const matchByAbbreviation = Utils.matchArticle(article, query);
+                                                                            const matchByContent = Utils.itemMatches(article, query);
+                                                                            if (matchByAbbreviation || matchByContent) {
+                                                                                html += this.renderArticleSearch(article, query, data, false, !matchByAbbreviation);
+                                                                            }
+                                                                        }
+                                                                    });
+                                                                }
+                                                            }
+                                                        } else if (nestedItem.type === 'article') {
+                                                            const matchByAbbreviation = Utils.matchArticle(nestedItem, query);
+                                                            const matchByContent = Utils.itemMatches(nestedItem, query);
+                                                            if (matchByAbbreviation || matchByContent) {
+                                                                html += this.renderArticleSearch(nestedItem, query, data, false, !matchByAbbreviation);
+                                                            }
+                                                        }
+                                                    });
+                                                }
+                                            }
+                                        } else if (subitem.id && subitem.title) { // Capítulo ou Título interno
+                                            const chapterMatches = this.levelMatches(subitem, query);
+                                            if (chapterMatches) {
+                                                html += `<p class="chapter-header"><strong>${Utils.highlightText(subitem.title || '', query)}</strong></p>`;
+                                                if (subitem.description && containsQuery(subitem.description, query)) {
+                                                    html += `<p class="observation">${Utils.highlightText(subitem.description, query)}</p>`;
+                                                }
+                                                if (Array.isArray(subitem.content)) {
+                                                    subitem.content.forEach(nestedItem => {
+                                                        if (nestedItem.type === 'section') {
+                                                            const sectionMatches = this.levelMatches(nestedItem, query);
+                                                            if (sectionMatches) {
+                                                                html += `<h3 class="section-header">${Utils.highlightText(nestedItem.title || '', query)}</h3>`;
+                                                                if (nestedItem.description && containsQuery(nestedItem.description, query)) {
+                                                                    html += `<p class="title-definition">${Utils.highlightText(nestedItem.description, query)}</p>`;
+                                                                }
                                                                 if (Array.isArray(nestedItem.content)) {
                                                                     nestedItem.content.forEach(article => {
                                                                         if (article.type === 'article') {
@@ -150,8 +188,8 @@ class ContentRenderer {
 
         let html = '';
         let contentHtml = filterChildren
-            ? SearchModeRenderer.renderFilteredArticleContent(article, query) // Filtra apenas nós relevantes
-            : SearchModeRenderer.renderArticleContent(article, query, fullMatch, expandAll); // Exibe tudo
+            ? SearchModeRenderer.renderFilteredArticleContent(article, query)
+            : SearchModeRenderer.renderArticleContent(article, query, fullMatch, expandAll);
         const isPartial = !fullMatch && !expandAll && SearchModeRenderer.hasMoreContent(article, query);
 
         if (contentHtml) {

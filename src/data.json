@@ -5279,7 +5279,7 @@
                   "text": "quando a velocidade for superior à máxima em até 20%: (Lei 11.334/06)",
                   "details": {
                     "infracao": "Média; (Lei 11.334/06)",
-                    "penalidade": "Multa (3 vezes) e suspensão do direito de dirigir. (Lei 11.334/06)"
+                    "penalidade": "Multa. (Lei 11.334/06)"
                   }
                 },
                 {
@@ -5297,6 +5297,11 @@
                     "infracao": "Gravíssima; (Lei 14.071/20)",
                     "penalidade": "Multa (3 vezes) e suspensão do direito de dirigir. (Lei 14.071/20)"
                   }
+                }
+              ],
+              "observations": [
+                {
+                  "text": "IRRETROATIVIDADE DA LEI 11.334/06: Se a lei altera uma infração administrativa de trânsito, tornando-a menos grave, estalei não irá retroagir para alcançar pessoas que praticaram esta infração antes da Lei mais favorável. Como não se trata de norma de natureza penal, não há como aplicar a retroatividade da norma mais benéfica. Assim, a redação dada pela Lei 11.334/06 ao art. 218, III do CTB (dirigir acima da velocidade permitida) não pode ser aplicada às infrações cometidas antes da vigência daquela lei, ainda que a nova redação seja mais benéfica ao infrator do que a anterior. Isso porque o art. 218 prevê uma infração administrativa e não penal. STJ. 2ª Turma. AgRg nos EDcl no REsp 1281027-SP, Rel. Min. Mauro Campbell Marques, julgado em 18/12/2012 (Info 516)."
                 }
               ]
             },

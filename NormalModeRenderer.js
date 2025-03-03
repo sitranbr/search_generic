@@ -3,15 +3,35 @@ class NormalModeRenderer {
     static display(data, expandAll = false) {
         let html = '';
         data.content.forEach(topLevel => {
-            html += this.renderLevel(topLevel, 'title-header', 'h2', expandAll);
+            html += this.renderLevel(topLevel, 'title-header', 'h1', expandAll); // Partes como h1
         });
         return html;
     }
 
-    static renderLevel(item, headerClass, headerTag, expandAll = false) {
+    static typeMap = {
+        section: (subItem, expandAll, nextLevel) => this.renderLevel(subItem, 'section-header', 'h4', expandAll, nextLevel),
+        subsection: (subItem, expandAll, nextLevel) => this.renderLevel(subItem, 'subsection-header', 'h5', expandAll, nextLevel),
+        article: (subItem, expandAll) => this.renderArticle(subItem, expandAll),
+        anexo: (subItem) => this.renderAnexo(subItem)
+    };
+    
+    static renderLevel(item, headerClass, headerTag, expandAll = false, level = 1) {
         let html = '';
         const itemTitle = item.title || '';
         const itemId = item.id || '';
+        const nextLevel = level + 1;
+        const nextTag = `h${Math.min(nextLevel, 6)}`;
+        const classHierarchy = {
+            'title-header': 'book-header',
+            'book-header': 'chapter-header',
+            'chapter-header': 'section-header',
+            'section-header': 'subsection-header',
+            'subsection-header': 'article-header',
+            'article-header': 'article-header'
+        };
+    
+        const nextClass = classHierarchy[headerClass] || 'article-header';
+    
         html += `<div class="${headerClass.split('-')[0]}" id="${itemId}">`;
         html += `<${headerTag} class="${headerClass} collapsible${expandAll ? ' active open' : ''}">`;
         html += `<span class="icon">${expandAll ? '−' : '+'}</span>${itemTitle}</${headerTag}>`;
@@ -21,16 +41,10 @@ class NormalModeRenderer {
         }
         if (Array.isArray(item.content)) {
             item.content.forEach(subItem => {
-                if (subItem.id && subItem.title) { // Capítulo ou nível superior
-                    html += this.renderLevel(subItem, 'chapter-header', 'h3', expandAll);
-                } else if (subItem.type === 'section') {
-                    html += this.renderLevel(subItem, 'section-header', 'h4', expandAll);
-                } else if (subItem.type === 'subsection') {
-                    html += this.renderLevel(subItem, 'subsection-header', 'h5', expandAll);
-                } else if (subItem.type === 'article') {
-                    html += this.renderArticle(subItem, expandAll);
-                } else if (subItem.type === 'anexo') {
-                    html += this.renderAnexo(subItem);
+                if (subItem.id && subItem.title) {
+                    html += this.renderLevel(subItem, nextClass, nextTag, expandAll, nextLevel);
+                } else {
+                    html += (this.typeMap[subItem.type] || (() => ''))(subItem, expandAll, nextLevel);
                 }
             });
         }
