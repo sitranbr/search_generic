@@ -1,5 +1,4 @@
 // ContentRenderer.js
-const SearchHandler = require('./searchHandler');
 const NormalModeRenderer = require('./NormalModeRenderer');
 const SearchModeRenderer = require('./SearchModeRenderer');
 const Utils = require('./Utils');
