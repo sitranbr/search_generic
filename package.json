@@ -4,8 +4,8 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon start.js",
-    "start": "pm2 start processes.json",
-    "stop": "pm2 delete processes.json"
+    "start": "pm2 start start.js",
+    "stop": "pm2 delete start.js"
   },
   "author": "Sandro A Costa",
   "license": "ISC",
