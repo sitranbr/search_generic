@@ -76,13 +76,32 @@ class Utils {
             this.matchesNotes(item.note, q) ||
             this.matchesItems(item.items, q) ||
             this.matchesSubitems(item.subitems, q) ||
+            this.matchesOptions(item.options, q) || // Novo: verifica options diretamente
+            this.matchesParagraphs(item.paragraphs, q) || // Novo: verifica parágrafos
+            this.matchesObservations(item.observations, q) || // Novo: verifica observações
             this.matchesAnexo(item, q) ||
-            this.matchesSection(item, q)
+            this.matchesSection(item, q) ||
+            this.matchArticle(item, q)
         );
     }
 
-    static matchesText_stable(text, query) {
-        return text && text.toLowerCase().includes(query);
+    // Novo método para options
+    static matchesOptions(options, query) {
+        return options && Array.isArray(options) && options.some(option => this.matchesText(option.text, query));
+    }
+
+    // Novo método para parágrafos
+    static matchesParagraphs(paragraphs, query) {
+        return paragraphs && Array.isArray(paragraphs) && paragraphs.some(paragraph => 
+            this.matchesText(paragraph.text, query) ||
+            this.matchesItems(paragraph.items, query) ||
+            this.matchesNotes(paragraph.note, query)
+        );
+    }
+
+    // Novo método para observações
+    static matchesObservations(observations, query) {
+        return observations && Array.isArray(observations) && observations.some(obs => this.matchesText(obs.text, query));
     }
 
     static matchesText(text, query) {
@@ -153,22 +172,6 @@ class Utils {
         return fullItemsCount > currentItemsCount ||
                fullParagraphsCount > currentParagraphsCount ||
                fullArticle.text.length > article.text.length;
-    }
-
-    static highlightText_stable(text, query) {
-        if (!query) return text;
-        let searchText = query.toLowerCase().trim();
-        if (!searchText) return text;
-        const accentMap = {
-            'a': 'aáàâãäå', 'e': 'eéèêë', 'i': 'iíìîï', 'o': 'oóòôõöø', 'u': 'uúùûü', 'c': 'cç'
-        };
-        searchText = searchText.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
-        let pattern = '';
-        for (const char of searchText) {
-            pattern += accentMap[char] ? `[${accentMap[char]}${accentMap[char].toUpperCase()}]` : char;
-        }
-        const regex = new RegExp(`(${pattern})`, 'gi');
-        return text.replace(regex, `<span class="highlightText">$1</span>`);
     }
 
     static highlightText(text, query) {
