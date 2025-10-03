@@ -129,10 +129,12 @@ function performSearch() {
     clearSearchButton.classList.toggle('show', query.length > 0);
     searchBtn.style.display = query.length > 0 ? 'none' : 'block';
 
-    // Realiza a busca apenas se o termo tiver mais de 4 caracteres
-    if (query.length <= 5) {
+    // Realiza a busca apenas se o termo tiver mais de 2 caracteres
+    // Exceção para abreviações de artigos (art1, art2, etc.)
+    const isArticleAbbreviation = /^art\.?\d+\.?$/i.test(query);
+    if (query.length <= 2 && !isArticleAbbreviation) {
         console.log('Termo muito curto, busca não realizada:', query);
-        return; // Impede a busca para termos curtos
+        return; // Impede a busca para termos muito curtos
     }
 
     const fetchUrl = query ? `/${route}/search?q=${encodeURIComponent(query)}` : `/${route}/search`;

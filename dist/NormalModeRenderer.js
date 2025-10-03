@@ -3,7 +3,7 @@ class NormalModeRenderer {
     static display(data, expandAll = false) {
         let html = '';
         data.content.forEach(topLevel => {
-            html += this.renderLevel(topLevel, 'title-header', 'h1', expandAll); // Partes como h1
+            html += this.renderLevel(topLevel, 'title-header', 'h3', expandAll); // Partes como h1
         });
         return html;
     }
