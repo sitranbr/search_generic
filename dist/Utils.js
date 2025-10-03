@@ -6,7 +6,14 @@ class Utils {
         let html = '';
         const label = item.item || '';
         const text = item.text || '';
-        html += `<p class="item"><strong>${label}</strong> ${this.highlightText(text, query)}</p>`;
+        
+        // Sempre renderiza o item pai se há subitems ou se o texto corresponde
+        if (item.subitems && Array.isArray(item.subitems) && item.subitems.length > 0) {
+            html += `<p class="item"><strong>${label}</strong> ${this.highlightText(text, query)}</p>`;
+        } else {
+            html += `<p class="item"><strong>${label}</strong> ${this.highlightText(text, query)}</p>`;
+        }
+        
         if (item.details) {
             html += this.renderDetails(item.details);
         }
@@ -16,7 +23,8 @@ class Utils {
                 const subText = subitem.text || '';
                 let subitemHtml = '';
 
-                if (this.matchesText(subText, query)) {
+                // Se não está filtrando ou se o subitem corresponde à busca, renderiza
+                if (!filterOptions || this.matchesText(subText, query)) {
                     subitemHtml += `<p class="alinea">${letter}) ${this.highlightText(subText, query)}</p>`;
                 }
 

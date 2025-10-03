@@ -54,7 +54,7 @@ class SearchModeRenderer {
     static renderItems(items, query) {
         let html = '';
         items.forEach(item => {
-            html += Utils.renderItemSearch(item, query);
+            html += Utils.renderItemSearch(item, query, false); // false = não filtrar, mostrar todos os subitems
         });
         return html;
     }
