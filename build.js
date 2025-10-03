@@ -54,6 +54,20 @@ function build() {
     console.log('Copiando netlify...');
     copyDir('netlify', path.join(distDir, 'netlify'));
     
+    // Garantir que os arquivos JSON estão na função
+    console.log('Copiando arquivos JSON para netlify/functions...');
+    const jsonFiles = ['src/data.json', 'src/cf.json', 'src/cc.json'];
+    jsonFiles.forEach(file => {
+        if (fs.existsSync(file)) {
+            const destPath = path.join(distDir, 'netlify/functions', file);
+            const destDir = path.dirname(destPath);
+            if (!fs.existsSync(destDir)) {
+                fs.mkdirSync(destDir, { recursive: true });
+            }
+            fs.copyFileSync(file, destPath);
+        }
+    });
+    
     // Copiar arquivos JS
     const jsFiles = [
         'server.js',
