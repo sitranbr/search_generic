@@ -81,7 +81,8 @@ body {
     padding: 5px;
     border-bottom: 1px solid #dee2e6;
     color: #6c757d;
-    font-size: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
     cursor: pointer;
 }
 
