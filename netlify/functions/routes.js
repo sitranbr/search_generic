@@ -14,9 +14,11 @@ router.get('/', (req, res) => {
 // Rota CTB
 router.get('/ctb', async (req, res) => {
     try {
-        const filePath = path.join(__dirname, 'src/data.json');
+        const filePath = path.join(__dirname, 'src', 'data.json');
         console.log('Tentando carregar arquivo:', filePath);
         console.log('Diretório atual:', __dirname);
+        console.log('Arquivos no diretório:', require('fs').readdirSync(__dirname));
+        console.log('Arquivos em src:', require('fs').readdirSync(path.join(__dirname, 'src')));
         
         const data = await JSONDataLoader.load(filePath);
         console.log('Dados carregados com sucesso');
