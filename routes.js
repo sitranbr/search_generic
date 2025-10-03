@@ -14,7 +14,13 @@ router.get('/', (req, res) => {
 // Rota CTB
 router.get('/ctb', async (req, res) => {
     try {
-        const data = await JSONDataLoader.load(path.join(__dirname, 'src/data.json'));
+        const filePath = path.join(__dirname, 'src/data.json');
+        console.log('Tentando carregar arquivo:', filePath);
+        console.log('Diretório atual:', __dirname);
+        
+        const data = await JSONDataLoader.load(filePath);
+        console.log('Dados carregados com sucesso');
+        
         const query = req.query.q ? req.query.q.trim() : '';
         let renderedContent = query 
             ? await searchHandler.handleSearchAjax(req, data) 
@@ -22,7 +28,8 @@ router.get('/ctb', async (req, res) => {
         res.render('index', { renderedContent, query, route: 'ctb' });
     } catch (error) {
         console.error("Erro ao carregar os dados do CTB:", error.stack);
-        res.status(500).send("Erro ao carregar os dados.");
+        console.error("Caminho do arquivo:", path.join(__dirname, 'src/data.json'));
+        res.status(500).send("Erro ao carregar os dados: " + error.message);
     }
 });
 router.get('/ctb/search', searchHandler.handleSearch);
