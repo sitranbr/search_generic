@@ -1,7 +1,5 @@
 const express = require('express');
 const cors = require('cors');
-const serverless = require('serverless-http');
-
 const app = express();
 
 // Ativa o CORS
@@ -14,7 +12,4 @@ require('./viewConfig')(app);
 const routes = require('./routes');
 app.use('/', routes);
 
-// Handler para Netlify Functions
-const handler = serverless(app);
-
-module.exports = { handler };
+module.exports = app;

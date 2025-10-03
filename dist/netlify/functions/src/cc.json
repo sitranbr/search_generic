@@ -1,0 +1,421 @@
+{
+    "content": [
+      {
+        "id": "parte-geral",
+        "title": "Parte Geral",
+        "content": [
+          {
+            "id": "livro-1",
+            "title": "Livro I – Das Pessoas",
+            "content": [
+              {
+                "id": "title-1",
+                "title": "Título I – Das Pessoas Naturais",
+                "content": [
+                  {
+                    "id": "chapter-1",
+                    "title": "Capítulo I – Da Personalidade e da Capacidade",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-2",
+                    "title": "Capítulo II – Dos Direitos da Personalidade",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-3",
+                    "title": "Capítulo III – Da Ausência",
+                    "content": [
+                      {
+                        "type": "section",
+                        "title": "Seção I – Da Curadoria dos Bens do Ausente",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção II – Da Sucessão Provisória",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção III – Da Sucessão Definitiva",
+                        "content": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "title-2",
+                "title": "Título II – Das Pessoas Jurídicas",
+                "content": [
+                  {
+                    "id": "chapter-1",
+                    "title": "Capítulo I – Disposições Gerais",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-2",
+                    "title": "Capítulo II – Das Associações",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-3",
+                    "title": "Capítulo III – Das Fundações",
+                    "content": []
+                  }
+                ]
+              },
+              {
+                "id": "title-3",
+                "title": "Título III – Do Domicílio",
+                "content": []
+              }
+            ]
+          },
+          {
+            "id": "livro-2",
+            "title": "Livro II – Dos Bens",
+            "content": [
+              {
+                "id": "title-unico",
+                "title": "Título Único – Das Diferentes Classes de Bens",
+                "content": [
+                  {
+                    "id": "chapter-1",
+                    "title": "Capítulo I – Dos Bens Considerados em Si Mesmos",
+                    "content": [
+                      {
+                        "type": "section",
+                        "title": "Seção I – Dos Bens Imóveis",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção II – Dos Bens Móveis",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção III – Dos Bens Fungíveis e Consumíveis",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção IV – Dos Bens Divisíveis",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção V – Dos Bens Singulares e Coletivos",
+                        "content": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "chapter-2",
+                    "title": "Capítulo II – Dos Bens Reciprocamente Considerados",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-3",
+                    "title": "Capítulo III – Dos Bens Públicos",
+                    "content": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "livro-3",
+            "title": "Livro III – Dos Fatos Jurídicos",
+            "content": [
+              {
+                "id": "title-1",
+                "title": "Título I – Do Negócio Jurídico",
+                "content": [
+                  {
+                    "id": "chapter-1",
+                    "title": "Capítulo I – Disposições Gerais",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-2",
+                    "title": "Capítulo II – Da Representação",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-3",
+                    "title": "Capítulo III – Da Condição, do Termo e do Encargo",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-4",
+                    "title": "Capítulo IV – Dos Defeitos do Negócio Jurídico",
+                    "content": [
+                      {
+                        "type": "section",
+                        "title": "Seção I – Do Erro ou Ignorância",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção II – Do Dolo",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção III – Da Coação",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção IV – Do Estado de Perigo",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção V – Da Lesão",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção VI – Da Fraude contra Credores",
+                        "content": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "chapter-5",
+                    "title": "Capítulo V – Da Invalidade do Negócio Jurídico",
+                    "content": []
+                  }
+                ]
+              },
+              {
+                "id": "title-2",
+                "title": "Título II – Dos Atos Jurídicos Lícitos",
+                "content": []
+              },
+              {
+                "id": "title-3",
+                "title": "Título III – Dos Atos Ilícitos",
+                "content": []
+              },
+              {
+                "id": "title-4",
+                "title": "Título IV – Da Prescrição e da Decadência",
+                "content": [
+                  {
+                    "id": "chapter-1",
+                    "title": "Capítulo I – Da Prescrição",
+                    "content": [
+                      {
+                        "type": "section",
+                        "title": "Seção I – Disposições Gerais",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção II – Das Causas Que Impedem ou Suspendem a Prescrição",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção III – Das Causas Que Interrompem a Prescrição",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção IV – Dos Prazos da Prescrição",
+                        "content": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "chapter-2",
+                    "title": "Capítulo II – Da Decadência",
+                    "content": []
+                  }
+                ]
+              },
+              {
+                "id": "title-5",
+                "title": "Título V – Da Prova",
+                "content": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "parte-especial",
+        "title": "Parte Especial",
+        "content": [
+          {
+            "id": "livro-1",
+            "title": "Livro I – Do Direito das Obrigações",
+            "content": [
+              {
+                "id": "titulo-1",
+                "title": "Título I – Das Modalidades das Obrigações",
+                "content": [
+                  {
+                    "id": "chapter-1",
+                    "title": "Capítulo I – Das Obrigações de Dar",
+                    "content": [
+                      {
+                        "type": "section",
+                        "title": "Seção I – Das Obrigações de Dar Coisa Certa",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção II – Das Obrigações de Dar Coisa Incerta",
+                        "content": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "chapter-2",
+                    "title": "Capítulo II – Das Obrigações de Fazer",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-3",
+                    "title": "Capítulo III – Das Obrigações de Não Fazer",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-4",
+                    "title": "Capítulo IV – Das Obrigações Alternativas",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-5",
+                    "title": "Capítulo V – Das Obrigações Divisíveis e Indivisíveis",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-6",
+                    "title": "Capítulo VI – Das Obrigações Solidárias",
+                    "content": [
+                      {
+                        "type": "section",
+                        "title": "Seção I – Disposições Gerais",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção II – Da Solidariedade Ativa",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção III – Da Solidariedade Passiva",
+                        "content": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "titulo-2",
+                "title": "Título II – Da Transmissão das Obrigações",
+                "content": [
+                  {
+                    "id": "chapter-1",
+                    "title": "Capítulo I – Da Cessão de Crédito",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-2",
+                    "title": "Capítulo II – Da Assunção de Dívida",
+                    "content": []
+                  }
+                ]
+              },
+              {
+                "id": "titulo-3",
+                "title": "Título III – Do Adimplemento e Extinção das Obrigações",
+                "content": [
+                  {
+                    "id": "chapter-1",
+                    "title": "Capítulo I – Do Pagamento",
+                    "content": [
+                      {
+                        "type": "section",
+                        "title": "Seção I – De Quem Deve Pagar",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção II – Daqueles a Quem se Deve Pagar",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção III – Do Objeto do Pagamento e Sua Prova",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção IV – Do Lugar do Pagamento",
+                        "content": []
+                      },
+                      {
+                        "type": "section",
+                        "title": "Seção V – Do Tempo do Pagamento",
+                        "content": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "chapter-2",
+                    "title": "Capítulo II – Do Pagamento em Consignação",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-3",
+                    "title": "Capítulo III – Do Pagamento com Sub-rogação",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-4",
+                    "title": "Capítulo IV – Da Imputação do Pagamento",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-5",
+                    "title": "Capítulo V – Da Dação em Pagamento",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-6",
+                    "title": "Capítulo VI – Da Novação",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-7",
+                    "title": "Capítulo VII – Da Compensação",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-8",
+                    "title": "Capítulo VIII – Da Confusão",
+                    "content": []
+                  },
+                  {
+                    "id": "chapter-9",
+                    "title": "Capítulo IX – Da Remissão das Dívidas",
+                    "content": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}
+
