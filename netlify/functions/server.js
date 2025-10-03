@@ -11,7 +11,7 @@ app.use(cors());
 require('./viewConfig')(app);
 
 // Importa as rotas definidas em routes.js
-const routes = require('../routes');
+const routes = require('../../routes');
 app.use('/', routes);
 
 // Handler para Netlify Functions

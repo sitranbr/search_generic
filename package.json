@@ -6,7 +6,7 @@
     "dev": "nodemon start.js",
     "start": "pm2 start start.js",
     "stop": "pm2 delete start.js",
-    "build": "npm install && mkdir dist && xcopy public dist\\public /E /I && xcopy views dist\\views /E /I && xcopy src dist\\src /E /I && copy server.js dist\\ && copy routes.js dist\\ && copy *.js dist\\",
+    "build": "npm install && mkdir -p dist && cp -r public dist/ && cp -r views dist/ && cp -r src dist/ && cp server.js dist/ && cp routes.js dist/ && cp *.js dist/",
     "serve": "node start.js"
   },
   "author": "Sandro A Costa",
