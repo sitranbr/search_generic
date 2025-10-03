@@ -6,6 +6,11 @@ const JSONDataLoader = require('./JSONDataLoader');
 const NormalModeRenderer = require('./NormalModeRenderer');
 const searchHandler = require('./search.js');
 
+// Rota raiz - redireciona para CTB
+router.get('/', (req, res) => {
+    res.redirect('/ctb');
+});
+
 // Rota CTB
 router.get('/ctb', async (req, res) => {
     try {
