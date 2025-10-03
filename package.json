@@ -6,7 +6,7 @@
     "dev": "nodemon start.js",
     "start": "pm2 start start.js",
     "stop": "pm2 delete start.js",
-    "build": "npm install && node build.js",
+    "build": "npm install && node build.js && echo 'Build concluído para hospedagem Node.js tradicional'",
     "serve": "node start.js"
   },
   "author": "Sandro A Costa",
@@ -16,8 +16,7 @@
     "cors": "^2.8.5",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
-    "search-api": "file:",
-    "serverless-http": "^3.2.0"
+    "search-api": "file:"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"

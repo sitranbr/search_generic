@@ -14,14 +14,7 @@ router.get('/', (req, res) => {
 // Rota CTB
 router.get('/ctb', async (req, res) => {
     try {
-        const filePath = path.join(__dirname, 'src', 'data.json');
-        console.log('Tentando carregar arquivo:', filePath);
-        console.log('Diretório atual:', __dirname);
-        console.log('Arquivos no diretório:', require('fs').readdirSync(__dirname));
-        console.log('Arquivos em src:', require('fs').readdirSync(path.join(__dirname, 'src')));
-        
-        const data = await JSONDataLoader.load(filePath);
-        console.log('Dados carregados com sucesso');
+        const data = await JSONDataLoader.load(path.join(__dirname, 'src/data.json'));
         
         const query = req.query.q ? req.query.q.trim() : '';
         let renderedContent = query 
@@ -31,7 +24,7 @@ router.get('/ctb', async (req, res) => {
     } catch (error) {
         console.error("Erro ao carregar os dados do CTB:", error.stack);
         console.error("Caminho do arquivo:", path.join(__dirname, 'src/data.json'));
-        res.status(500).send("Erro ao carregar os dados: " + error.message);
+        res.status(500).send("Erro ao carregar os dados.");
     }
 });
 router.get('/ctb/search', searchHandler.handleSearch);

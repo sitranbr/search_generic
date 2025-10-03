@@ -1,21 +1,13 @@
 [build]
   command = "npm run build"
-  functions = "netlify/functions"
   publish = "dist"
-
-# Configuração específica para Express.js
 
 [build.environment]
   NODE_VERSION = "18"
   NPM_VERSION = "9"
 
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/server"
-  status = 200
-
-[functions]
-  node_bundler = "esbuild"
+# Configuração para hospedagem Node.js tradicional
+# Removendo Netlify Functions para usar Express.js padrão
 
 [[headers]]
   for = "/*"
