@@ -51,7 +51,10 @@ function build() {
     console.log('Copiando src...');
     copyDir('src', path.join(distDir, 'src'));
     
-    // Não copiar netlify/functions para hospedagem tradicional
+    console.log('Copiando script...');
+    copyDir('script', path.join(distDir, 'script'));
+    
+    // Arquivos copiados para hospedagem Node.js tradicional
     
     // Copiar arquivos JS
     const jsFiles = [
@@ -59,13 +62,8 @@ function build() {
         'routes.js',
         'start.js',
         'viewConfig.js',
-        'JSONDataLoader.js',
-        'NormalModeRenderer.js',
-        'SearchModeRenderer.js',
         'ContentRenderer.js',
-        'Utils.js',
-        'search.js',
-        'searchHandler.js'
+        'Utils.js'
     ];
     
     console.log('Copiando arquivos JS...');

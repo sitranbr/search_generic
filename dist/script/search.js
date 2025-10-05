@@ -1,6 +1,6 @@
 // search.js
 const JSONDataLoader = require('./JSONDataLoader');
-const ContentRenderer = require('./ContentRenderer');
+const ContentRenderer = require('../ContentRenderer');
 const NormalModeRenderer = require('./NormalModeRenderer');
 const SearchHandler = require('./searchHandler');
 

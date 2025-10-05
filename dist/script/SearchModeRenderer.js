@@ -1,5 +1,5 @@
 // SearchModeRenderer.js
-const Utils = require('./Utils');
+const Utils = require('../Utils');
 
 class SearchModeRenderer {
     static renderArticleContent(article, query, fullMatch, expandAll) {

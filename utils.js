@@ -1,5 +1,5 @@
 // Utils.js
-const SearchHandler = require('./searchHandler');
+const SearchHandler = require('./script/searchHandler');
 
 class Utils {
     static renderItemSearch(item, query, filterOptions = false) {

@@ -34,7 +34,7 @@ class NormalModeRenderer {
     
         html += `<div class="${headerClass.split('-')[0]}" id="${itemId}">`;
         html += `<${headerTag} class="${headerClass} collapsible${expandAll ? ' active open' : ''}">`;
-        html += `<span class="icon">${expandAll ? '−' : '+'}</span>${itemTitle}</${headerTag}>`;
+        html += `<span class="icon">${expandAll ? '−' : '+'}</span> ${itemTitle}</${headerTag}>`;
         html += `<div class="content" style="display: ${expandAll ? 'block' : 'none'};">`;
         if (item.description) {
             html += `<p class="observation">${item.description}</p>`;

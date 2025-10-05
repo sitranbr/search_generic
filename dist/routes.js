@@ -2,9 +2,9 @@
 const express = require('express');
 const path = require('path');
 const router = express.Router();
-const JSONDataLoader = require('./JSONDataLoader');
-const NormalModeRenderer = require('./NormalModeRenderer');
-const searchHandler = require('./search.js');
+const JSONDataLoader = require('./script/JSONDataLoader');
+const NormalModeRenderer = require('./script/NormalModeRenderer');
+const searchHandler = require('./script/search.js');
 
 // Rota raiz - redireciona para CTB
 router.get('/', (req, res) => {

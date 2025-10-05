@@ -1,6 +1,6 @@
 // ContentRenderer.js
-const NormalModeRenderer = require('./NormalModeRenderer');
-const SearchModeRenderer = require('./SearchModeRenderer');
+const NormalModeRenderer = require('./script/NormalModeRenderer');
+const SearchModeRenderer = require('./script/SearchModeRenderer');
 const Utils = require('./Utils');
 
 class ContentRenderer {
@@ -163,7 +163,36 @@ class ContentRenderer {
                 }
             }
         });
+        
+        // Verifica se não há resultados e retorna mensagem elegante
+        if (!html.trim()) {
+            return this.renderNoResultsMessage(query);
+        }
+        
         return html;
+    }
+
+    static renderNoResultsMessage(query) {
+        return `
+            <div class="no-results-container">
+                <div class="no-results-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3 class="no-results-title">Nenhum resultado encontrado</h3>
+                <p class="no-results-message">
+                    Não foram encontrados resultados para "<strong>${query}</strong>".
+                </p>
+                <div class="no-results-suggestions">
+                    <p>Sugestões:</p>
+                    <ul>
+                        <li>Verifique se a palavra está escrita corretamente</li>
+                        <li>Tente usar termos mais gerais</li>
+                        <li>Use abreviações como "art1", "art2", etc.</li>
+                        <li>Experimente sinônimos ou termos relacionados</li>
+                    </ul>
+                </div>
+            </div>
+        `;
     }
 
     static levelMatches(item, query) {
