@@ -6618,7 +6618,167 @@
                   "text": "(VETADO)"
                 }
               ]
+            },
+            {
+              "type": "article",
+              "number": 262,
+              "text": "(REVOGADO pela Lei 13.281/16)"
+            },
+            {
+              "type": "article",
+              "number": 263,
+              "text": "A CASSAÇÃO do documento de habilitação dar-se-á:",
+              "items": [
+                {
+                  "item": "I.",
+                  "text": "quando, suspenso o direito de dirigir, o infrator conduzir qualquer veículo;"
+                },
+                {
+                  "item": "II.",
+                  "text": "no caso de reincidência, no prazo de 12 meses, das infrações previstas no inciso III do art. 162 e nos arts. 163, 164, 165, 173, 174 e 175;"
+                },
+                {
+                  "item": "III.",
+                  "text": "quando condenado judicialmente por delito de trânsito, observado o disposto no art. 160."
+                },
+                {
+                  "item": "IV.",
+                  "text": "(VETADO)"
+                }
+              ],
+              "paragraphs": [
+                {
+                  "number": "§ 1º.",
+                  "text": "Constatada, em processo administrativo, a irregularidade na expedição do documento de habilitação, a autoridade expedidora promoverá o seu cancelamento."
+                },
+                {
+                  "number": "§ 2º.",
+                  "text": "Decorridos 2 anos da cassação da Carteira Nacional de Habilitação, o infrator poderá requerer sua reabilitação, submetendo-se a todos os exames necessários à habilitação, na forma estabelecida pelo CONTRAN."
+                },
+                {
+                  "number": "§ 3º.",
+                  "text": "(VETADO)"
+                }
+              ]
+            },
+            {
+              "type": "article",
+              "number": 264,
+              "text": "(VETADO)"
+            },
+            {
+              "type": "article",
+              "number": 265,
+              "text": "As penalidades de suspensão do direito de dirigir e de cassação do documento de habilitação serão aplicadas por decisão fundamentada da autoridade de trânsito competente, em processo administrativo, assegurado ao infrator amplo direito de defesa."
+            },
+            {
+              "type": "article",
+              "number": 266,
+              "text": "Quando o infrator cometer, simultaneamente, 2 ou mais infrações, ser-lhe-ão aplicadas, cumulativamente, as respectivas penalidades."
+            },
+            {
+              "type": "article",
+              "number": 267,
+              "text": "Deverá ser imposta a penalidade de advertência por escrito à infração de natureza leve ou média, passível de ser punida com multa, caso o infrator não tenha cometido nenhuma outra infração nos últimos 12 meses. (Lei 14.071/20)",
+              "paragraphs": [
+                {
+                  "number": "§§ 1º e 2º.",
+                  "text": "(REVOGADOS pela Lei 14.071/20)"
+                }
+              ]
+            },
+            {
+              "type": "article",
+              "number": 268,
+              "text": "O infrator será submetido a CURSO DE RECICLAGEM, na forma estabelecida pelo CONTRAN:",
+              "items": [
+                {
+                  "item": "I.",
+                  "text": "(REVOGADO pela Lei 14.071/20)"
+                },
+                {
+                  "item": "II.",
+                  "text": "quando suspenso do direito de dirigir;"
+                },
+                {
+                  "item": "III.",
+                  "text": "quando se envolver em sinistro grave para o qual haja contribuído, independentemente de processo judicial; (Lei 14.599/23)"
+                },
+                {
+                  "item": "IV.",
+                  "text": "quando condenado judicialmente por delito de trânsito;"
+                },
+                {
+                  "item": "V.",
+                  "text": "a qualquer tempo, se for constatado que o condutor está colocando em risco a segurança do trânsito;"
+                },
+                {
+                  "item": "VI.",
+                  "text": "(REVOGADO pela Lei 14.071/20)"
+                }
+              ],
+              "paragraphs": [
+                {
+                  "number": "Parágrafo único.",
+                  "text": "Além do curso de reciclagem previsto no caput deste artigo, o infrator será submetido à avaliação psicológica nos casos dos incisos III, IV e V do caput deste artigo. (Lei 14.071/20) (PARTE PROMULGADA PELO CONGRESSO NACIONAL)"
+                }
+              ]
+            },
+            {
+              "type": "article",
+              "number": "268-A",
+              "text": "Fica criado o Registro Nacional Positivo de Condutores (RNPC), administrado pelo órgão máximo executivo de trânsito da União, com a finalidade de cadastrar os condutores que não cometeram infração de trânsito sujeita à pontuação prevista no art. 259 deste Código, nos últimos 12 meses, conforme regulamentação do Contran. (Lei 14.071/20)",
+              "paragraphs": [
+                {
+                  "number": "§ 1º.",
+                  "text": "O RNPC deverá ser atualizado mensalmente. (Lei 14.071/20)"
+                },
+                {
+                  "number": "§ 2º.",
+                  "text": "A abertura de cadastro requer autorização prévia e expressa do potencial cadastrado. (Lei 14.071/20)"
+                },
+                {
+                  "number": "§ 3º.",
+                  "text": "Após a abertura do cadastro, a anotação de informação no RNPC independe de autorização e de comunicação ao cadastrado. (Lei 14.071/20)"
+                },
+                {
+                  "number": "§ 4º.",
+                  "text": "A exclusão do RNPC dar-se-á: (Lei 14.071/20)",
+                  "items": [
+                    {
+                      "item": "I.",
+                      "text": "por solicitação do cadastrado; (Lei 14.071/20)"
+                    },
+                    {
+                      "item": "II.",
+                      "text": "quando for atribuída ao cadastrado pontuação por infração; (Lei 14.071/20)"
+                    },
+                    {
+                      "item": "III.",
+                      "text": "quando o cadastrado tiver o direito de dirigir suspenso; (Lei 14.071/20)"
+                    },
+                    {
+                      "item": "IV.",
+                      "text": "quando a Carteira Nacional de Habilitação do cadastrado estiver cassada ou com validade vencida há mais de 30 dias; (Lei 14.071/20)"
+                    },
+                    {
+                      "item": "V.",
+                      "text": "quando o cadastrado estiver cumprindo pena privativa de liberdade. (Lei 14.071/20)"
+                    }
+                  ]
+                },
+                {
+                  "number": "§ 5º.",
+                  "text": "A consulta ao RNPC é garantida a todos os cidadãos, nos termos da regulamentação do Contran. (Lei 14.071/20)"
+                },
+                {
+                  "number": "§ 6º.",
+                  "text": "A União, os Estados, o Distrito Federal e os Municípios poderão utilizar o RNPC para conceder benefícios fiscais ou tarifários aos condutores cadastrados, na forma da legislação específica de cada ente da Federação. (Lei 14.071/20)"
+                }
+              ]
             }
+
+
 
 
 
@@ -7451,7 +7611,24 @@
                           "text": "sobre faixa de trânsito temporária ou permanentemente destinada a pedestres."
                         }
                       ]
+                    },
+                    {
+                      "type": "article",
+                      "number": 299,
+                      "text": "(VETADO)"
+                    },
+                    {
+                      "type": "article",
+                      "number": 300,
+                      "text": "(VETADO)"
+                    },
+                    {
+                      "type": "article",
+                      "number": 301,
+                      "text": "Ao condutor de veículo, nos casos de sinistros de trânsito que resultem em vítima, não se imporá a prisão em flagrante nem se exigirá fiança, SE PRESTAR PRONTO E INTEGRAL SOCORRO ÀQUELA. (Lei 14.599/23)"
                     }
+
+
                   ]
               },
               {
@@ -7460,7 +7637,7 @@
                 "content": [
                   {
                     "type": "article",
-                    "number": "Homicídio Culposo na Direção de Veículo Automotor",
+                    "number": "302",
                     "text": "Praticar HOMICÍDIO CULPOSO na direção de veículo automotor: Penas: detenção, de 2 a 4 anos, e suspensão ou proibição de se obter a permissão ou a habilitação para dirigir veículo automotor.",
                     "paragraphs": [
                         {
@@ -7499,6 +7676,296 @@
                             "penalties": "Penas: reclusão, de 5 a 8 anos, e suspensão ou proibição do direito de se obter a permissão ou a habilitação para dirigir veículo automotor. (Lei 13.546/17)"
                         }
                     ]
+                  },
+                  {
+                    "type": "article",
+                    "number": 303,
+                    "text": "Praticar LESÃO CORPORAL CULPOSA na direção de veículo automotor:",
+                    "penalty": "detenção, de 6 meses a 2 anos e suspensão ou proibição de se obter a permissão ou a habilitação para dirigir veículo automotor.",
+                    "paragraphs": [
+                      {
+                        "number": "§ 1º.",
+                        "text": "AUMENTA-SE a pena de 1/3 à metade, se ocorrer qualquer das hipóteses do § 1º do art. 302. (Lei 13.546/17)"
+                      },
+                      {
+                        "number": "§ 2º.",
+                        "text": "A pena privativa de liberdade é de reclusão de 2 a 5 anos, sem prejuízo das outras penas previstas neste artigo, se o agente conduz o veículo com capacidade psicomotora alterada em razão da influência de álcool ou de outra substância psicoativa que determine dependência, e se do crime resultar lesão corporal de natureza grave ou gravíssima. (Lei 13.546/17)"
+                      }
+                    ],
+                    "observations": [
+                      {
+                        "text": "Se um indivíduo, que não possui habilitação para dirigir (art. 309 do CTB), conduz seu veículo de forma imprudente, negligente ou imperita e causa lesão corporal em alguém, ele responderá pelo crime do art. 303, § 1º, do CTB, ficando o delito do art. 309 do CTB absorvido por força do princípio da consunção."
+                      },
+                      {
+                        "text": "O delito de dirigir veículo sem habilitação é crime de ação penal pública incondicionada. Por outro lado, a lesão corporal culposa (art. 303 do CTB) é crime de ação pública condicionada à representação."
+                      },
+                      {
+                        "text": "Imagine que a vítima não exerça seu direito de representação no prazo legal. Diante disso, o Ministério Público poderá denunciar o agente pelo delito do art. 309? NÃO. O delito do art. 309 já foi absorvido pela conduta de praticar lesão corporal culposa na direção de veículo automotor, tipificada no art. 303 do CTB, crime de ação pública condicionada à representação. Como a representação não foi formalizada pela vítima, houve extinção da punibilidade, que abrange tanto a lesão corporal como a conduta de dirigir sem habilitação."
+                      },
+                      {
+                        "text": "STF. 2ª Turma. HC 128921/RJ, Rel. Min. Gilmar Mendes, julgado em 25/8/2015 (Info 796)."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "article",
+                    "number": 304,
+                    "text": "Deixar o condutor do veículo, na ocasião do acidente, de prestar imediato socorro à vítima, podendo fazê-lo:",
+                    "penalty": "detenção, de 6 meses a 1 ano, ou multa, se o fato não constituir elemento de crime mais grave.",
+                    "observations": [
+                      {
+                        "text": "Esse crime do art. 304 do CTB é de perigo concreto. Ou seja, exige-se a demonstração de que a omissão do condutor colocou em risco efetivo a integridade da vítima. Caso contrário, o fato será atípico."
+                      },
+                      {
+                        "text": "STJ. 6ª Turma. REsp 1809661/SP, Rel. Min. Nefi Cordeiro, julgado em 19/02/2019."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "article",
+                    "number": 305,
+                    "text": "Afastar-se o condutor do veículo do local do acidente, para fugir à responsabilidade penal ou civil que lhe possa ser atribuída:",
+                    "penalty": "detenção, de 6 meses a 1 ano, ou multa.",
+                    "observations": [
+                      {
+                        "text": "É CONSTITUCIONAL O tipo penal exige dolo específico: a intenção de fugir da responsabilidade. A simples fuga do local, por medo ou nervosismo, não configura o crime se não estiver presente o fim específico de evitar a responsabilização. STJ. 6ª Turma. HC 580.881/MS, Rel. Min. Rogerio Schietti Cruz, julgado em 06/10/2020."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "article",
+                    "number": 306,
+                    "text": "Conduzir veículo automotor com capacidade psicomotora alterada em razão da influência de álcool ou de outra substância psicoativa que determine dependência.",
+                    "note": [
+                      {
+                        "text": "detenção, de 6 meses a 3 anos, multa e suspensão ou proibição de se obter a permissão ou a habilitação para dirigir veículo automotor."
+                      }
+                    ],
+                    "paragraphs": [
+                      {
+                        "number": "§ 1º.",
+                        "text": "As condutas previstas no caput serão constatadas por:",
+                        "items": [
+                          {
+                            "item": "I.",
+                            "text": "concentração igual ou superior a 6 decigramas de álcool por litro de sangue ou igual ou superior a 0,3 miligrama de álcool por litro de ar alveolar;"
+                          },
+                          {
+                            "item": "II.",
+                            "text": "sinais que indiquem, na forma disciplinada pelo Contran, alteração da capacidade psicomotora."
+                          }
+                        ]
+                      },
+                      {
+                        "number": "§ 2º.",
+                        "text": "A verificação do disposto neste artigo poderá ser obtida mediante teste de alcoolemia ou toxicológico, exame clínico, perícia, vídeo, prova testemunhal ou outros meios de prova em direito admitidos, observado o direito à contraprova."
+                      },
+                      {
+                        "number": "§ 3º.",
+                        "text": "O Contran disporá sobre a equivalência entre os distintos testes de alcoolemia ou toxicológicos para efeito de caracterização do crime tipificado neste artigo."
+                      },
+                      {
+                        "number": "§ 4º.",
+                        "text": "Poderá ser empregado qualquer aparelho homologado pelo Instituto Nacional de Metrologia, Qualidade e Tecnologia - INMETRO - para se determinar o previsto no caput."
+                      }
+                    ],
+                    "observations": [
+                      {
+                        "text": "Tendo havido a indicação de que os delitos, autônomos, resultaram de ações distintas, não incide o concurso formal aos tipos penais dos arts. 306 (embriaguez ao volante) e 309 (direção de veículo automotor sem a devida habilitação). STJ. 5ª Turma. AgRg no HC 749.440-SC, julgado em 23/8/2022."
+                      },
+                      {
+                        "text": "É possível a prisão preventiva em caso de reincidência no crime de embriaguez ao volante. STJ. 6ª Turma. RHC 132.611/GO, julgado em 02/02/2021."
+                      },
+                      {
+                        "text": "Não se reconhece a consunção entre os crimes dos arts. 306 e 303 do CTB. STJ. 5ª Turma. REsp 1629107/DF, julgado em 20/03/2018."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "article",
+                    "number": 307,
+                    "text": "Violar a suspensão ou a proibição de se obter a permissão ou a habilitação para dirigir veículo automotor imposta com fundamento neste Código.",
+                    "penalty": "detenção, de 6 meses a 1 ano e multa, com nova imposição adicional de idêntico prazo de suspensão ou de proibição.",
+                    "paragraphs": [
+                      {
+                        "number": "Parágrafo único.",
+                        "text": "Nas mesmas penas incorre o condenado que deixa de entregar, no prazo estabelecido no § 1º do art. 293, a Permissão para Dirigir ou a Carteira de Habilitação."
+                      }
+                    ],
+                    "observations": [
+                      {
+                        "text": "O crime do art. 307 do CTB somente se verifica em caso de violação de suspensão ou proibição de dirigir imposta por decisão judicial (não se aplica à suspensão administrativa)."
+                      },
+                      {
+                        "text": "É atípica a conduta contida no art. 307 do CTB quando a suspensão ou proibição decorre de medida administrativa. STJ. 6ª Turma. HC 427.472-SP, Rel. Min. Maria Thereza de Assis Moura, julgado em 23/08/2018 (Info 641)."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "article",
+                    "number": 308,
+                    "text": "Participar, na direção de veículo automotor, em via pública, de corrida, disputa ou competição automobilística ou ainda de exibição ou demonstração de perícia em manobra de veículo automotor, não autorizada pela autoridade competente, gerando situação de risco à incolumidade pública ou privada.",
+                    "penalty": "detenção, de 6 meses a 3 anos, multa e suspensão ou proibição de se obter a permissão ou a habilitação para dirigir veículo automotor.",
+                    "paragraphs": [
+                      {
+                        "number": "§ 1º.",
+                        "text": "Se da prática do crime previsto no caput resultar lesão corporal de natureza grave, e as circunstâncias demonstrarem que o agente não quis o resultado nem assumiu o risco de produzi-lo, a pena privativa de liberdade é de reclusão, de 3 a 6 anos, sem prejuízo das outras penas previstas neste artigo."
+                      },
+                      {
+                        "number": "§ 2º.",
+                        "text": "Se da prática do crime previsto no caput resultar morte, e as circunstâncias demonstrarem que o agente não quis o resultado nem assumiu o risco de produzi-lo, a pena privativa de liberdade é de reclusão de 5 a 10 anos, sem prejuízo das outras penas previstas neste artigo."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "article",
+                    "number": 309,
+                    "text": "Dirigir veículo automotor, em via pública, sem a devida Permissão para Dirigir ou Habilitação ou, ainda, se cassado o direito de dirigir, gerando perigo de dano.",
+                    "penalty": "detenção, de 6 meses a 1 ano, ou multa.",
+                    "observations": [
+                      {
+                        "text": "Não incide o concurso formal entre os crimes dos arts. 306 (embriaguez ao volante) e 309 (direção sem habilitação), quando houver ações distintas. (STJ, AgRg no HC 749.440-SC, Info Especial 10)."
+                      },
+                      {
+                        "text": "Súmula 720, STF: O art. 309 do CTB, que exige perigo de dano, derrogou o art. 32 da Lei das Contravenções Penais quanto à direção sem habilitação em vias terrestres."
+                      },
+                      {
+                        "text": "O crime do art. 309 é absorvido pelo art. 303 quando há lesão corporal culposa causada por condutor não habilitado, conforme o princípio da consunção. (STF, HC 128921/RJ, Info 796)"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "article",
+                    "number": 310,
+                    "text": "Permitir, confiar ou entregar a direção de veículo automotor a pessoa não habilitada, com habilitação cassada ou com o direito de dirigir suspenso, ou, ainda, a quem, por seu estado de saúde, física ou mental, ou por embriaguez, não esteja em condições de conduzi-lo com segurança.",
+                    "penalty": "detenção, de 6 meses a 1 ano, ou multa.",
+                    "observations": [
+                      {
+                        "text": "SÚMULA 575, STJ: Constitui crime a conduta de permitir, confiar ou entregar a direção de veículo automotor a pessoa que não seja habilitada, ou que se encontre em qualquer das situações previstas no art. 310 do CTB, independentemente da ocorrência de lesão ou de perigo de dano concreto na condução do veículo."
+                      },
+                      {
+                        "text": "O crime do art. 310 é de perigo abstrato, não sendo exigida a demonstração de dano concreto para sua configuração. Basta a entrega do veículo a pessoa sabidamente inabilitada. (STJ, REsp 1.485.830-MG, Info 563; STJ, REsp 1.468.099-MG, Info 559)"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "article",
+                    "number": 310,
+                    "text": "Permitir, confiar ou entregar a direção de veículo automotor a pessoa não habilitada, com habilitação cassada ou com o direito de dirigir suspenso, ou, ainda, a quem, por seu estado de saúde, física ou mental, ou por embriaguez, não esteja em condições de conduzi-lo com segurança:",
+                    "penalty": "detenção, de 6 meses a 1 ano, ou multa.",
+                    "observations": [
+                      {
+                        "text": "SÚMULA 575, STJ: Constitui crime a conduta de permitir, confiar ou entregar a direção de veículo automotor a pessoa que não seja habilitada, ou que se encontre em qualquer das situações previstas no art. 310 do CTB, independentemente da ocorrência de lesão ou de perigo de dano concreto na condução do veículo."
+                      },
+                      {
+                        "text": "O crime de entrega de direção de veículo automotor a pessoa não habilitada é de perigo abstrato."
+                      },
+                      {
+                        "text": "Para a configuração desse crime não é exigida a demonstração de perigo concreto de dano. Isso porque, no referido artigo, não há previsão, quanto ao resultado, de qualquer dano no mundo concreto, bastando a mera entrega do veículo a pessoa que se sabe inabilitada, para a consumação do tipo penal. Trata-se, portanto, de crime de perigo abstrato."
+                      },
+                      {
+                        "text": "STJ. 3ª Seção. REsp 1.485.830-MG, Rel. Min. Sebastião Reis Júnior, Rel. para acórdão Min. Rogerio Schietti Cruz, julgado em 11/3/2015 (recurso repetitivo) (Info 563)"
+                      },
+                      {
+                        "text": "STJ. 6ª Turma. REsp 1.468.099-MG, Rel. Min. Nefi Cordeiro, julgado em 19/3/2015 (Info 559)"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "article",
+                    "number": 311,
+                    "text": "Trafegar em velocidade incompatível com a segurança nas proximidades de escolas, hospitais, estações de embarque e desembarque de passageiros, logradouros estreitos, ou onde haja grande movimentação ou concentração de pessoas, GERANDO PERIGO DE DANO:",
+                    "penalty": "detenção, de 6 meses a 1 ano, ou multa."
+                  },
+                  {
+                    "type": "article",
+                    "number": 312,
+                    "text": "Inovar artificiosamente, em caso de sinistro automobilístico com vítima, na pendência do respectivo procedimento policial preparatório, inquérito policial ou processo penal, o estado de lugar, de coisa ou de pessoa, a fim de induzir a erro o agente policial, o perito ou o juiz: (Lei 14.599/23)",
+                    "penalty": "detenção, de 6 meses a 1 ano, ou multa.",
+                    "paragraphs": [
+                      {
+                        "number": "Parágrafo único.",
+                        "text": "Aplica-se o disposto neste artigo, ainda que não iniciados, quando da inovação, o procedimento preparatório, o inquérito ou o processo aos quais se refere."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "article",
+                    "number": "312-A",
+                    "text": "Para os crimes relacionados nos arts. 302 a 312 deste Código, nas situações em que o juiz aplicar a substituição de pena privativa de liberdade por pena restritiva de direitos, esta deverá ser de prestação de serviço à comunidade ou a entidades públicas, em uma das seguintes atividades: (Lei 13.281/16)",
+                    "items": [
+                      {
+                        "item": "I.",
+                        "text": "trabalho, aos fins de semana, em equipes de resgate dos corpos de bombeiros e em outras unidades móveis especializadas no atendimento a vítimas de trânsito; (Lei 13.281/16)"
+                      },
+                      {
+                        "item": "II.",
+                        "text": "trabalho em unidades de pronto-socorro de hospitais da rede pública que recebem vítimas de sinistro de trânsito e politraumatizados; (Lei 14.599/23)"
+                      },
+                      {
+                        "item": "III.",
+                        "text": "trabalho em clínicas ou instituições especializadas na recuperação de sinistrados de trânsito; (Lei 14.599/23)"
+                      },
+                      {
+                        "item": "IV.",
+                        "text": "outras atividades relacionadas a resgate, atendimento e recuperação de vítimas de sinistros de trânsito. (Lei 14.599/23)"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "article",
+                    "number": "312-B",
+                    "text": "Aos crimes previstos no § 3º do art. 302 e no § 2º do art. 303 deste Código não se aplica o disposto no inciso I do caput do art. 44 do Código Penal. (Lei 14.071/20)",
+                    "items": [
+                          {
+                            "item": "1.",
+                            "text": "Na hipótese de homicídio praticado na direção de veículo automotor, havendo elementos nos autos indicativos de que o condutor agiu, possivelmente, com dolo eventual, o julgamento acerca da ocorrência deste ou da culpa consciente compete ao Tribunal do Júri, na qualidade de juiz natural da causa."
+                          },
+                          {
+                            "item": "2.",
+                            "text": "O fato de a infração ao art. 302 do Código de Trânsito Brasileiro - CTB ter sido praticada por motorista profissional não conduz à substituição da pena acessória de suspensão do direito de dirigir por outra reprimenda, pois é justamente de tal categoria que se espera maior cuidado e responsabilidade no trânsito."
+                          },
+                          {
+                            "item": "3.",
+                            "text": "A imposição da penalidade de suspensão do direito de dirigir veículo automotor não tem o condão, por si só, de caracterizar ofensa ou ameaça à liberdade de locomoção do paciente, razão pela qual não é cabível o manejo do habeas corpus."
+                          },
+                          {
+                            "item": "4.",
+                            "text": "Quando não reconhecida a autonomia de desígnios, o crime de lesão corporal culposa (art. 303 do CTB) absorve o delito de direção sem habilitação (art. 309 do CTB), funcionando este como causa de aumento de pena (art. 303, parágrafo único, do CTB)."
+                          },
+                          {
+                            "item": "5.",
+                            "text": "Os crimes de embriaguez ao volante (art. 306 do CTB) e o de lesão corporal culposa em direção de veículo automotor (art. 303 do CTB) são autônomos e o primeiro não é meio normal, nem fase de preparação ou de execução para o cometimento do segundo, não havendo falar em aplicação do princípio da consunção."
+                          },
+                          {
+                            "item": "6.",
+                            "text": "O crime do art. 306 do CTB é de perigo abstrato, sendo despicienda a demonstração da efetiva potencialidade lesiva da conduta."
+                          },
+                          {
+                            "item": "7.",
+                            "text": "Para a configuração do delito tipificado no art. 306 do CTB, antes da alteração introduzida pela Lei n. 12.760/2012, é imprescindível a aferição da concentração de álcool no sangue por meio de teste de etilômetro ou de exame de sangue, conforme parâmetros normativos."
+                          },
+                          {
+                            "item": "8.",
+                            "text": "O indivíduo não pode ser compelido a colaborar com os referidos testes do 'bafômetro' ou do exame de sangue, em respeito ao princípio segundo o qual ninguém é obrigado a se autoincriminar (nemo tenetur se detegere). (Recurso Repetitivo - Tema 446)"
+                          },
+                          {
+                            "item": "9.",
+                            "text": "É irrelevante qualquer discussão acerca da alteração das funções psicomotoras do agente se o delito foi praticado após as alterações da Lei n. 11.705/2008 e antes do advento da Lei n. 12.760/2012, pois a simples conduta de dirigir veículo automotor em via pública, com concentração de álcool por litro de sangue igual ou superior a 6 (seis) decigramas, configura o crime previsto no art. 306 do CTB."
+                          },
+                          {
+                            "item": "10.",
+                            "text": "Com o advento da Lei n. 12.760/2012, que modificou o art. 306 do CTB, foi reconhecido ser dispensável a submissão do acusado a exames de alcoolemia, admite-se a comprovação da embriaguez do condutor de veículo automotor por vídeo, testemunhos ou outros meios de prova em direito admitidos, observado o direito à contraprova."
+                          },
+                          {
+                            "item": "11.",
+                            "text": "Constitui crime a conduta de permitir, confiar ou entregar a direção de veículo automotor a pessoa que não seja habilitada, ou que se encontre em qualquer das situações previstas no art. 310 do CTB, independentemente da ocorrência de lesão ou de perigo de dano concreto na condução do veículo. (Súmula n. 575/STJ) (Recurso Repetitivo - Tema 901)"
+                          },
+                          {
+                            "item": "12.",
+                            "text": "A desobediência a ordem de parada dada pela autoridade de trânsito ou por seus agentes, ou por policiais ou outros agentes públicos no exercício de atividades relacionadas ao trânsito, não constitui crime de desobediência, pois há previsão de sanção administrativa específica no art. 195 do CTB, o qual não estabelece a possibilidade de cumulação de punição penal."
+                          }
+                        ]
                   }
                 ]
             }
@@ -7727,8 +8194,262 @@
                     ]
                   }
                 ]
+              },      
+              {
+                "type": "article",
+                "number": 327,
+                "text": "A partir da publicação deste Código, somente poderão ser fabricados e licenciados veículos que obedeçam aos limites de peso e dimensões fixados na forma desta Lei, ressalvados os que vierem a ser regulamentados pelo CONTRAN.",
+                "paragraphs": [
+                  {
+                  "number": 1,
+                  "text": "Parágrafo único. (VETADO)"
+                  }
+                ]
+              },
+              {
+                "type": "article",
+                "number": 328,
+                "text": "O veículo apreendido ou removido a qualquer título e não reclamado por seu proprietário dentro do prazo de 60 dias, contado da data de recolhimento, será avaliado e LEVADO A LEILÃO, a ser realizado preferencialmente por meio eletrônico. (Lei 13.160/15)",
+                "paragraphs": [
+                {
+                  "number": "§ 1º",
+                  "text": "Publicado o edital do leilão, a preparação poderá ser iniciada após 30 dias, contados da data de recolhimento do veículo, o qual será classificado em 2 categorias: (Lei 13.160/15)",
+                  "items": [
+                    {
+                      "item": "I.",
+                      "text": "CONSERVADO, quando apresenta condições de segurança para trafegar; (Lei 13.160/15)"
+                    },
+                    {
+                      "item": "II.",
+                      "text": "SUCATA, quando não está apto a trafegar. (Lei 13.160/15)"
+                    }
+                  ]
+                },
+                {
+                  "number": "§ 2º",
+                  "text": "Se não houver oferta igual ou superior ao valor da avaliação, o lote será incluído no leilão seguinte, quando será arrematado pelo maior lance, desde que por valor não inferior a 50% do avaliado. (Lei 13.160/15)"
+                },
+                {
+                  "number": "§ 3º",
+                  "text": "Mesmo classificado como conservado, o veículo que for levado a leilão por 2 vezes e não for arrematado será leiloado como sucata. (Lei 13.160/15)"
+                },
+                {
+                  "number": "§ 4º",
+                  "text": "É vedado o retorno do veículo leiloado como sucata à circulação. (Lei 13.160/15)"
+                },
+                {
+                  "number": "§ 5º",
+                  "text": "A cobrança das despesas com estada no depósito será limitada ao prazo de 6 meses. (Lei 13.160/15)"
+                },
+                {
+                "number": "§ 6º",
+                "text": "Os valores arrecadados em leilão deverão ser utilizados para custeio da realização do leilão, dividindo-se os custos entre os veículos arrematados, proporcionalmente ao valor da arrematação, e destinando-se os valores remanescentes, na seguinte ordem, para: (Lei 13.160/15)",
+                  "items": [
+                    {
+                    "item": "I.",
+                    "text": "as despesas com remoção e estada; (Lei 13.160/15)"
+                    },
+                    {
+                    "item": "II.",
+                    "text": "os tributos vinculados ao veículo, na forma do § 10; (Lei 13.160/15)"
+                    },
+                    {
+                    "item": "III.",
+                    "text": "os credores trabalhistas, tributários e titulares de crédito com garantia real, segundo a ordem de preferência estabelecida no art. 186 do CTN; (Lei 13.160/15)"
+                    },
+                    {
+                    "item": "IV.",
+                    "text": "as multas devidas ao órgão ou à entidade responsável pelo leilão; (Lei 13.160/15)"
+                    },
+                    {
+                    "item": "V.",
+                    "text": "as demais multas devidas aos órgãos integrantes do Sistema Nacional de Trânsito, segundo a ordem cronológica; (Lei 13.160/15)"
+                    },
+                    {
+                    "item": "VI.",
+                    "text": "os demais créditos, segundo a ordem de preferência legal. (Lei 13.160/15)"
+                    }
+                  ]
+                },
+                {
+                "number": "§ 7º",
+                "text": "Sendo insuficiente o valor arrecadado para quitar os débitos incidentes sobre o veículo, a situação será comunicada aos credores. (Lei 13.160/15)"
+                },
+                {
+                "number": "§ 8º",
+                "text": "Os órgãos públicos responsáveis serão comunicados do leilão previamente para que formalizem a desvinculação dos ônus incidentes sobre o veículo no prazo máximo de 10 dias. (Lei 13.160/15)"
+                },
+                {
+                "number": "§ 9º",
+                "text": "Os débitos incidentes sobre o veículo antes da alienação administrativa ficam dele automaticamente desvinculados, sem prejuízo da cobrança contra o proprietário anterior. (Lei 13.160/15)"
+                },
+                {
+                "number": "§ 10º",
+                "text": "Aplica-se o disposto no § 9º inclusive ao débito relativo a tributo cujo fato gerador seja a propriedade, o domínio útil, a posse, a circulação ou o licenciamento de veículo. (Lei 13.160/15)"
+                },
+                {
+                "number": "§ 11º",
+                "text": "Na hipótese de o antigo proprietário reaver o veículo, por qualquer meio, os débitos serão novamente vinculados ao bem, aplicando-se, nesse caso, o disposto nos §§ 1º, 2º e 3º do art. 271. (Lei 13.160/15)"
+                },
+                {
+                "number": "§ 12º",
+                "text": "Quitados os débitos, o saldo remanescente será depositado em conta específica do órgão responsável pela realização do leilão e ficará à disposição do antigo proprietário, devendo ser expedida notificação a ele, no máximo em 30 dias após a realização do leilão, para o levantamento do valor no prazo de 5 anos, após os quais o valor será transferido, definitivamente, para o fundo a que se refere o parágrafo único do art. 320. (Lei 13.160/15)"
+                },
+                {
+                "number": "§ 13º",
+                "text": "Aplica-se o disposto neste artigo, no que couber, ao animal recolhido, a qualquer título, e não reclamado por seu proprietário no prazo de 60 dias, a contar da data de recolhimento, conforme regulamentação do CONTRAN. (Lei 13.160/15)"
+                },
+                {
+                "number": "§ 14º",
+                "text": "Se identificada a existência de restrição policial ou judicial sobre o prontuário do veículo, a autoridade responsável pela restrição será notificada para a retirada do bem do depósito, mediante a quitação das despesas com remoção e estada, ou para a autorização do leilão nos termos deste artigo. (Lei 13.281/16)"
+                },
+                {
+                "number": "§ 15º",
+                "text": "Se no prazo de 60 dias, a contar da notificação de que trata o § 14, não houver manifestação da autoridade responsável pela restrição judicial ou policial, estará o órgão de trânsito autorizado a promover o leilão do veículo nos termos deste artigo. (Lei 13.281/16)"
+                },
+                {
+                "number": "§ 16º",
+                "text": "Os veículos, sucatas e materiais inservíveis de bens automotores que se encontrarem nos depósitos há mais de 1 ano poderão ser destinados à reciclagem, independentemente da existência de restrições sobre o veículo. (Lei 13.281/16)"
+                },
+                {
+                "number": "§ 17º",
+                "text": "O procedimento de hasta pública na hipótese do § 16 será realizado por lote de tonelagem de material ferroso, observando-se, no que couber, o disposto neste artigo, condicionando-se a entrega do material arrematado aos procedimentos necessários à descaracterização total do bem e à destinação exclusiva, ambientalmente adequada, à reciclagem siderúrgica, vedado qualquer aproveitamento de peças e partes. (Lei 13.281/16)"
+                },
+                {
+                "number": "§ 18º",
+                "text": "Os veículos sinistrados irrecuperáveis queimados, adulterados ou estrangeiros, bem como aqueles sem possibilidade de regularização perante o órgão de trânsito, serão destinados à reciclagem, independentemente do período em que estejam em depósito, respeitado o prazo previsto no caput deste artigo, sempre que a autoridade responsável pelo leilão julgar ser essa a medida apropriada. (Lei 13.281/16)"
+                }
+                ]
+              },
+              {
+                "type": "article",
+                "number": 329,
+                "text": "Os condutores dos veículos de que tratam os arts. 135 e 136, para exercerem suas atividades, deverão apresentar, previamente, certidão negativa do registro de distribuição criminal relativamente aos crimes de homicídio, roubo, estupro e corrupção de menores, renovável a cada 5 anos, junto ao órgão responsável pela respectiva concessão ou autorização."
+              },
+              {
+                "type": "article",
+                "number": 330,
+                "text": "Os estabelecimentos onde se executem reformas ou recuperação de veículos e os que comprem, vendam ou desmontem veículos, usados ou não, são obrigados a possuir livros de registro de seu movimento de entrada e saída e de uso de placas de experiência, conforme modelos aprovados e rubricados pelos órgãos de trânsito.",
+                "paragraphs": [
+                {
+                    "number": "§ 1º",
+                    "text": "Os livros indicarão:",
+                    "items": [
+                      {
+                        "item": "I.",
+                        "text": "data de entrada do veículo no estabelecimento;"
+                      },
+                      {
+                        "item": "II.",
+                        "text": "nome, endereço e identidade do proprietário ou vendedor;"
+                      },
+                      {
+                        "item": "III.",
+                        "text": "data da saída ou baixa, nos casos de desmontagem;"
+                      },
+                      {
+                        "item": "IV.",
+                        "text": "nome, endereço e identidade do comprador;"
+                      },
+                      {
+                        "item": "V.",
+                        "text": "características do veículo constantes do seu certificado de registro;"
+                      },
+                      {
+                        "item": "VI.",
+                        "text": "número da placa de experiência."
+                      }
+                    ]
+                  },
+                {
+                "number": "§ 2º",
+                "text": "Os livros terão suas páginas numeradas tipograficamente e serão encadernados ou em folhas soltas, sendo que, no primeiro caso, conterão termo de abertura e encerramento lavrados pelo proprietário e rubricados pela repartição de trânsito, enquanto, no segundo, todas as folhas serão autenticadas pela repartição de trânsito."
+                },
+                {
+                "number": "§ 3º",
+                "text": "A entrada e a saída de veículos nos estabelecimentos referidos neste artigo registrar-se-ão no mesmo dia em que se verificarem assinaladas, inclusive, as horas a elas correspondentes, podendo os veículos irregulares lá encontrados ou suas sucatas ser apreendidos ou retidos para sua completa regularização."
+                },
+                {
+                "number": "§ 4º",
+                "text": "As autoridades de trânsito e as autoridades policiais terão acesso aos livros sempre que o solicitarem, não podendo, entretanto, retirá-los do estabelecimento."
+                },
+                {
+                "number": "§ 5º",
+                "text": "A falta de escrituração dos livros, o atraso, a fraude ao realizá-lo e a recusa de sua exibição serão punidas com a multa prevista para as infrações gravíssimas, independente das demais cominações legais cabíveis."
+                },
+                {
+                "number": "§ 6º",
+                "text": "Os livros previstos neste artigo poderão ser substituídos por sistema eletrônico, na forma regulamentada pelo Contran. (Lei 13.154/15)"
+                }
+                ]
+              },
+              {
+                "type": "article",
+                "number": "331",
+                "text": "Até a nomeação e posse dos membros que passarão a integrar os colegiados destinados ao julgamento dos recursos administrativos previstos na Seção II do Capítulo XVIII deste Código, o julgamento dos recursos ficará a cargo dos órgãos ora existentes."
+              },
+              {
+                "type": "article",
+                "number": "332",
+                "text": "Os órgãos e entidades integrantes do Sistema Nacional de Trânsito proporcionarão aos membros do CONTRAN, CETRAN e CONTRANDIFE, em serviço, todas as facilidades para o cumprimento de sua missão, fornecendo-lhes as informações que solicitarem, permitindo-lhes inspecionar a execução de quaisquer serviços e deverão atender prontamente suas requisições."
+              },
+              {
+                "type": "article",
+                "number": "333",
+                "text": "O CONTRAN estabelecerá, em até 120 dias após a nomeação de seus membros, as disposições previstas nos arts. 91 e 92, que terão de ser atendidas pelos órgãos e entidades executivos de trânsito e executivos rodoviários para exercerem suas competências.",
+                "paragraphs": [
+                  {
+                    "paragraph": "§ 1º",
+                    "text": "Os órgãos e entidades de trânsito já existentes terão prazo de 1 ano, após a edição das normas, para se adequarem às novas disposições estabelecidas pelo CONTRAN, conforme disposto neste artigo."
+                  },
+                  {
+                    "paragraph": "§ 2º",
+                    "text": "Os órgãos e entidades de trânsito a serem criados exercerão as competências previstas neste Código em cumprimento às exigências estabelecidas pelo CONTRAN, conforme disposto neste artigo, acompanhados pelo respectivo CETRAN, se órgão ou entidade municipal, ou CONTRAN, se órgão ou entidade estadual, do Distrito Federal ou da União, passando a integrar o Sistema Nacional de Trânsito."
+                  }
+                ]
+              },
+              {
+                "type": "article",
+                "number": "334",
+                "text": "As ondulações transversais existentes deverão ser homologadas pelo órgão ou entidade competente no prazo de 1 ano, a partir da publicação deste Código, devendo ser retiradas em caso contrário."
+              },
+              {
+                "type": "article",
+                "number": "335",
+                "text": "(VETADO)"
+              },
+              {
+                "type": "article",
+                "number": "336",
+                "text": "Aplicam-se os sinais de trânsito previstos no Anexo II até a aprovação pelo CONTRAN, no prazo de 360 dias da publicação desta Lei, após a manifestação da Câmara Temática de Engenharia, de Vias e Veículos e obedecidos os padrões internacionais."
+              },
+              {
+                "type": "article",
+                "number": "337",
+                "text": "Os CETRAN terão suporte técnico e financeiro dos Estados e Municípios que os compõem e, o CONTRANDIFE, do Distrito Federal."
+              },          
+              {
+                "type": "article",
+                "number": "338",
+                "text": "As montadoras, encarroçadoras, os importadores e fabricantes, ao comerciarem veículos automotores de qualquer categoria e ciclos, são obrigados a fornecer, no ato da comercialização do respectivo veículo, manual contendo normas de circulação, infrações, penalidades, direção defensiva, primeiros socorros e Anexos do Código de Trânsito Brasileiro."
+              },
+              {
+                "type": "article",
+                "number": "338-A",
+                "text": "As competências previstas no inciso XV do caput do art. 21 e no inciso XXII do caput do art. 24 deste Código serão atribuídas aos órgãos ou entidades descritos no caput dos referidos artigos a partir de 1/1/2024. (Lei 14.229/21)",
+                "paragraphs": [
+                  {
+                    "paragraph": "Parágrafo único.",
+                    "text": "Até 31/12/2023, as competências a que se refere o caput deste artigo serão exercidas pelos órgãos e entidades executivos de trânsito dos Estados e do DF. (Lei 14.229/21)"
+                  }
+                ]
+              },
+              {
+                "type": "article",
+                "number": "339",
+                "text": "Fica o Poder Executivo autorizado a abrir crédito especial no valor de R$ 264.954, em favor do ministério ou órgão a que couber a coordenação máxima do Sistema Nacional de Trânsito, para atender as despesas decorrentes da implantação deste Código."
               }
-          ]
+            ]                
         },
         {
           "id": "anexo-1",

@@ -81,3 +81,5 @@ search_generic/
 **Data:** $(Get-Date)
 **Versão:** 1.0.0
 **Autor:** Sandro A Costa
+
+

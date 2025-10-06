@@ -63,7 +63,8 @@ function build() {
         'start.js',
         'viewConfig.js',
         'ContentRenderer.js',
-        'Utils.js'
+        'Utils.js',
+        'processes.json'
     ];
     
     console.log('Copiando arquivos JS...');

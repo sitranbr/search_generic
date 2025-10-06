@@ -1,11 +1,12 @@
 {
-  "name": "search-api",
+  "name": "search-generic-api",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon start.js",
-    "start": "pm2 start start.js",
-    "stop": "pm2 delete start.js",
+    "start": "pm2 start processes.json",
+    "stop": "pm2 delete search-generic",
+    "restart": "pm2 restart search-generic",
     "build": "npm install && node build.js && echo 'Build concluído para hospedagem Node.js tradicional'",
     "serve": "node start.js"
   },
@@ -15,8 +16,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "ejs": "^3.1.10",
-    "express": "^4.21.2",
-    "search-api": "file:"
+    "express": "^4.21.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
